@@ -1,0 +1,420 @@
+/* General */
+
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100&display=swap');
+
+* {
+    margin: 0;
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    font-family: 'Prompt';
+    background-image:url(../images/pex4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: white;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Header */
+
+nav img {
+    width: 60px;
+    margin-right: 20px;
+}
+
+#logo {
+    display: flex;
+}
+
+nav h1 {
+    font-weight:bolder;
+    font-size:2.5em;
+    justify-self: start;
+    color: white;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(134, 52, 19);
+    margin-bottom: 50px;
+    z-index: 1;
+}
+
+li {
+    list-style: none;
+    margin: 0 auto;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+}
+
+#h li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+#h li:hover {
+    background-color: rgb(167, 66, 26);
+}
+
+#v {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color:rgb(167, 66, 26);
+    z-index: 1;
+}
+
+#h li:hover #v {
+    display: block;
+}
+
+#v li:hover  {
+    background-color: rgb(190, 87, 47);
+}
+
+#v li a {
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
+
+/* Main */
+
+#main-inicio::before {
+    content: "";
+    background-image: url(../images/wall.jpg);
+    filter: brightness(0.6) ;
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    top: 0; 
+    left: 0;
+    border-radius: 50px;
+    z-index: -1;
+}
+
+main {
+    width: 70%;
+    margin: 0 auto;
+    justify-self: center;
+    margin-bottom: 150px;
+    color: white;
+    position: relative;
+    padding: 50px;
+}
+
+main h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.mains {
+    background-color: rgb(134, 52, 19);
+    border-radius: 50px;
+}
+
+#main-inicio {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
+    display: grid;
+}
+
+.cuadros {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    position: relative;
+}
+
+.cuadros-img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.btn {
+    background-color: white;
+    color: black;
+    width: 10em;
+    height: 22px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    font-weight: 700;
+    border: 0;
+    border-radius: 20px;
+}
+
+.location {
+    margin-right: 8px;
+}
+
+.precio {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.btn:hover {
+    background-color: lightcoral;
+}
+
+main i:hover {
+    font-size: 25px;
+    color: red;
+}
+
+/* Footer */
+
+footer {
+    padding-top: 20px;
+    text-align: right;
+    background-color: rgb(134, 52, 19);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 10px;
+    color: white;
+}
+
+footer i {
+    font-size: 30px;
+    margin-right: 1.5vw;
+    padding: 10px;
+    color: white;
+}
+
+footer #insta:hover {
+    animation-name: insta;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+footer #twitter:hover {
+    color: lightblue;
+    animation-name: twitter;
+    animation-duration: 2s;
+}
+
+footer #github:hover {
+    color: black;
+    animation-name: github;
+    animation-duration: 2s;
+}
+
+@keyframes github {
+    50% {transform: rotate(60deg);}
+}
+
+@keyframes twitter {
+    50% {transform: rotate(-40deg); }
+}
+
+@keyframes insta {
+    0% {color: #f09433;}
+    33% {color: orange;}
+    66% {color: red;}
+    100% {color: purple ;}
+}
+
+#foot-text {
+    margin-right: 20px;
+}
+
+/* Nosotros */
+
+#main-us {
+    text-decoration: none;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(, 1fr));
+    grid-template-areas: "sec1 sec2" "sec3 sec4";
+    gap: 10px; */
+}
+
+#main-us #sec1 {
+    /* grid-area: sec1; */
+    text-decoration: none; /*este tag es solo para que el vsc no me tire error*/
+}
+
+#sec1 p {
+    text-align: justify;
+    margin-bottom: 10px;
+    display: inline-block    
+}
+
+#sec2 {
+    flex-direction: column;
+    /* grid-area: sec2; */
+    display: inline-block;
+    width: 100%;
+}
+
+#main-us article {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1%;
+}
+
+#sec3 {
+    /* grid-area: sec3; */
+    display: inline-block;
+    width: 49.5%;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+#sec4 img {
+    width: 100%;
+    margin-top: 10px;
+}
+
+#sec4 {
+    /* grid-area: sec4; */
+    display: inline-block;
+    width: 49.5%;
+}
+
+#sec4 p {
+    text-align:justify;
+}
+
+/* FAQ */
+
+#main-faq h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#main-faq article {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#sec5, #sec6 {
+    width: 49.5%;
+    display: inline-block;
+}
+
+#sec6 img {
+    width: 100%;
+    filter: brightness(0.8) contrast(1.2);
+}
+
+#main-faq h3 {
+    font-size: 30px;
+    animation-name: no;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes no {
+    50% {
+        color: red;
+    }
+}
+
+#main-faq details {
+    margin-bottom: 2vw;
+}
+
+#main-faq summary {
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+/* Contacto */
+
+#main-contacto {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.8;
+    width: 400px;
+}
+
+#main-contacto #enviar {
+    margin-bottom: 10px;
+    height: 2.5em;
+}
+
+#otro, #mas, #fem {
+    margin-right: 8px;
+}
+
+#main-contacto input, #main-contacto textarea {
+    margin-bottom: 30px;
+    padding: 8px;
+}
+
+/* Mistery */
+
+#main-mistery {
+grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
+display: grid;
+}
+
+/* HTMLS */
+
+#main-metamask, #main-eventos, #main-fav {
+text-align: center;
+display: flex;
+flex-direction: column;
+width: 400px;
+}
+
+/* Mis Aportes */
+
+#main-metamask input {
+    margin-top: 20px;
+}
+
+/* Eventos */
+
+#main-eventos h1 {
+    margin-bottom: 20px;
+}
+
+#main-eventos input {
+    margin-right: 1vw;
+    margin-bottom: 25px;
+}
+
+#main-eventos p {
+    margin: 5px 0px 5px 0px;
+}
+
+/* Celu */
+
+@media (max-width:600px) {
+    footer {
+        text-align: center;
+    }
+
+    #main-faq article {
+        flex-direction: column;
+    }
+}
