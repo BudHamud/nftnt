@@ -47,7 +47,7 @@ nav {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(134, 52, 19);
+    background-color: rgb(51, 41, 41);
     margin-bottom: 50px;
     z-index: 1;
 }
@@ -71,7 +71,7 @@ ul {
 }
 
 #h li:hover {
-    background-color: rgb(167, 66, 26);
+    background-color: rgb(95, 38, 16);
 }
 
 #v {
@@ -79,7 +79,7 @@ ul {
     display: none;
     list-style: none;
     width: 200px;
-    background-color:rgb(167, 66, 26);
+    background-color:rgb(131, 52, 21);
     z-index: 1;
 }
 
@@ -88,7 +88,7 @@ ul {
 }
 
 #v li:hover  {
-    background-color: rgb(190, 87, 47);
+    background-color: rgb(146, 60, 26);
 }
 
 #v li a {
@@ -138,6 +138,7 @@ main h2 {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
     display: grid;
+    gap: 30px;
 }
 
 .cuadros {
@@ -146,6 +147,12 @@ main h2 {
     font-size: 20px;
     padding: 20px;
     position: relative;
+    background-color: rgb(146, 60, 26);
+    border-radius: 20px;
+}
+
+.cuadros h4 {
+    margin-bottom: 10px;
 }
 
 .cuadros-img {
@@ -190,7 +197,7 @@ main i:hover {
 footer {
     padding-top: 20px;
     text-align: right;
-    background-color: rgb(134, 52, 19);
+    background-color: rgb(51, 41, 41);
     position: absolute;
     bottom: 0;
     width: 100%;
