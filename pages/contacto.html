@@ -15,12 +15,15 @@
 
   <body>
     <header>
+      <div class="menu-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
       <nav>
         <div id="logo">
           <img src="../images/logo.png" alt="" />
           <h1>NFTn't</h1>
         </div>
-        <ul id="h">
+        <ul class="h">
           <li><a href="../index.html">Inicio</a></li>
           <li><a href="contacto.html">Contáctanos</a></li>
           <li><a href="mistery.html">Cuadros</a></li>
@@ -41,9 +44,9 @@
     </header>
 
     <main id="main-contacto" class="mains">
-      <form action="#" method="get">
-        <fieldset>
-          <legend><h3>Contáctanos!</h3></legend>
+      <label action="#" method="get">
+        
+          <h3>Contáctanos!</h3>
           <label for="name">
             <p>Nombre y Apellido:</p>
             <input type="text" placeholder="Escriba su nombre..." name="name" id="name" required
@@ -57,15 +60,15 @@
             <input type="number" name="age" id="age" placeholder="Escriba su edad..." required />
           </label>
             <p>Indique su género:</p>
-            <label for="fem">
-              <input type="radio" name="fem-mas-e" id="fem" value="fem">Femenino
-            </label>
-            <label for="mas">
-              <input type="radio" name="fem-mas-e" id="mas" value="mas">Masculino
-            </label>
-            <label for="otro">
-              <input type="radio" name="fem-mas-e" id="otro" value="otro">Otro
+            <label for="genre"></label>
+            <select name="genre" id="genre" required>
+              <option id="poke" disabled selected></option>
+              <option value="mas">Masculino</option>
+              <option value="fem">Femenino</option>
+              <option value="oth">Otro</option>
+            </select>
           </label>
+        </div>
           <label for="email"
             ><p>Email:</p>
             <input type="email" id="email" placeholder="Escriba su email..."  required/>
@@ -77,7 +80,7 @@ Agradecemos cualquier aporte ^^.</textarea
             >
           </label>
           <div><input type="submit" name="enviar" id="enviar" class="btn" value="Enviar" /></div>
-        </fieldset>
+        
       </form>
     </main>
 
@@ -90,5 +93,7 @@ Agradecemos cualquier aporte ^^.</textarea
       <a href="https://github.com/BudHamud" target="_blank"
         ><i id="github" class="fa-brands fa-github"></i></a>
     </footer>
+
+    <script src="../scripts/script.js"></script>
   </body>
 </html>
