@@ -6,13 +6,6 @@
     margin: 0;
 }
 
-.menu-btn {
-    font-size: 30px;
-    position: absolute;
-    cursor: pointer;
-    padding: 10px;
-}
-
 html {
     min-height: 100%;
     position: relative;
@@ -33,6 +26,13 @@ a {
 }
 
 /* Header */
+
+.menu-btn {
+    font-size: 30px;
+    position: absolute;
+    cursor: pointer;
+    padding: 15px;
+}
 
 nav img {
     width: 60px;
@@ -340,12 +340,13 @@ footer #github:hover {
     text-align: center;
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 45vw;
 }
 
 #main-contacto #enviar {
     margin-bottom: 10px;
     height: 2.5em;
+    width: 40%;
 }
 
 #main-contacto input, #main-contacto textarea {
@@ -357,12 +358,12 @@ footer #github:hover {
 #main-contacto select {
     margin-bottom: 30px;
     padding: 8px;
-    width: 73%;
+    width: 72.4%;
 }
 
 /* Todas las Páginas */
 
-#main-metamask, #main-eventos, #main-fav {
+#main-metamask, #main-fav {
 text-align: center;
 display: flex;
 flex-direction: column;
@@ -377,12 +378,46 @@ width: 70%;
 
 /* Eventos */
 
+#main-eventos {
+    width: 70%;
+    text-align: center;
+}
+
+#main-eventos img {
+    width: 100%;
+}
+
+.grid-events {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "event1 event2 event3";
+    justify-items: center;
+    gap: 20px;
+}
+
+.event-1 {
+    grid-area: event1;
+    align-self: center;
+}
+
+.event-2 {
+    grid-area: event2;
+}
+
+.event-3 {
+    grid-area: event3;
+    align-self: center;
+}
+
+.event-1 input, .event-2 input, .event-3 input {
+    margin-right: 1vw;
+}
+
 #main-eventos h1 {
     margin-bottom: 20px;
 }
 
 #main-eventos input {
-    margin-right: 1vw;
     margin-bottom: 25px;
 }
 
@@ -390,16 +425,58 @@ width: 70%;
     margin: 5px 0px 5px 0px;
 }
 
-/* Celu */
+#noti-btn {
+    margin-left: 10px;
+}
+
+/* Responsive */
+
+@media (max-width:1024px) {
+    #main-contacto {
+        width: 50%;
+    }
+
+    .grid-events {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "event1" "event2" "event3";
+    }
+    
+}
+
+@media (max-width:768px) {
+    #main-contacto {
+        width: 60%;
+    }
+}
 
 @media (max-width:600px) {
 
-    main h2 {
-        font-size: 6vw;
+    #main-faq #sec5, #sec6 {
+        width: 100%;
     }
 
     #main-faq article {
         flex-direction: column;
+    }
+
+    #main-faq summary, p {
+        font-size: 4vw;
+    }
+
+    #main-faq p {
+        font-size: 3.5vw;
+    }
+
+    #main-faq details {
+        margin-bottom: 5vw;
+    }
+    
+    nav {
+        padding: 5px;
+    }
+
+    main h2 {
+        font-size: 6vw;
     }
 
     nav .h {
@@ -415,7 +492,7 @@ width: 70%;
 
     nav .h.show {
         transform: translateX(0px);
-        transform: translateY(60px);
+        transform: translateY(70px);
     }
 
     .menu-btn {
