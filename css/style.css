@@ -25,6 +25,18 @@ a {
     color: black;
 }
 
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: header;
+}
+
+footer {
+    grid-area: footer;
+}
+
 /* Header */
 
 .menu-btn {
@@ -152,7 +164,7 @@ main h2 {
     border-radius: 10px;
 }
 
-.btn {
+.btn-form {
     background-color: white;
     color: black;
     width: 10em;
@@ -165,17 +177,25 @@ main h2 {
     border-radius: 20px;
 }
 
+.btn {
+    background-color: white;
+    padding: 0px 15px;
+    border-radius: 20px;
+    font-size: 16px;
+    
+}
+
 .location {
     margin-right: 8px;
 }
 
-.precio {
+.title-cuadros {
     display: flex;
     align-items: center;
     justify-content:center;
 }
 
-.btn:hover {
+.btn:hover, .btn-form:hover {
     background-color: lightcoral;
 }
 
@@ -243,37 +263,48 @@ footer #github:hover {
 
 /* Nosotros */
 
-#main-us {
+#contain-us {
     text-decoration: none;
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(, 1fr));
-    grid-template-areas: "sec1 sec2" "sec3 sec4";
-    gap: 10px; */
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    /* grid-template-rows: */
+    grid-template-areas: "sec2 sec1" "sec3 sec4";
+    gap: 20px;
 }
 
-#main-us #sec1 {
-    /* grid-area: sec1; */
+#contain-us #sec1 {
+    grid-area: sec1;
     text-decoration: none; /*este tag es solo para que el vsc no me tire error*/
 }
 
-#sec1 p {
+#sec1 p, #sec3 p {
     text-align: justify;
     margin-bottom: 10px;
-    display: inline-block    
 }
 
 #sec2 {
-    flex-direction: column;
-    /* grid-area: sec2; */
-    display: inline-block;
+    grid-area: sec2;
+}
+
+#sec3 {
+    grid-area: sec3;
+    justify-self: center;
+    align-self: center;
+}
+
+#sec3 h3, #sec4 h3 {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+#sec3 img {
     width: 100%;
 }
 
 #sec4 {
-    /* grid-area: sec4; */
-    display: inline-block;
-    width: 100%;
+    grid-area: sec4;
+    align-self: center;
 }
 
 #sec4 img {
@@ -287,20 +318,29 @@ footer #github:hover {
 
 /* FAQ */
 
+#container-faq {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "sec5 sec6";
+}
+
 #main-faq h2 {
     text-align: center;
     margin-bottom: 20px;
 }
 
-#main-faq article {
+#sec5, #sec6 {
     width: 100%;
-    display: flex;
-    flex-flow: row wrap;
+    align-self: center;
 }
 
-#sec5, #sec6 {
-    width: 49.5%;
-    display: inline-block;
+#sec5 {
+    grid-area: sec5;
+    
+}
+
+#sec6 {
+    grid-area: sec6;
 }
 
 #sec6 img {
@@ -344,22 +384,39 @@ footer #github:hover {
     width: 45vw;
 }
 
-#main-contacto #enviar {
-    margin-bottom: 10px;
-    height: 2.5em;
-    width: 40%;
-}
-
 #main-contacto input, #main-contacto textarea {
     margin-bottom: 30px;
     padding: 8px;
     width: 70%;
+    background-color: #603601;
+    color: white;
+    border: solid 1px white;
 }
 
 #main-contacto select {
     margin-bottom: 30px;
     padding: 8px;
     width: 72.4%;
+    background-color: #583838;
+    color: white;
+    border: solid 1px white;
+}
+
+#main-contacto #enviar {
+    margin-bottom: 10px;
+    height: 2.5em;
+    width: 40%;
+    background-color: #CC9544;
+    cursor: pointer;
+}
+
+#main-contacto #enviar:hover {
+    opacity: 0.7;
+}
+
+#main-contacto input::placeholder {
+    color: white;
+    opacity: 0.7;
 }
 
 /* Todas las Páginas */
@@ -425,11 +482,11 @@ width: 65%;
 }
 
 #main-eventos input {
-    margin-bottom: 25px;
+    margin-top: 25px
 }
 
 #main-eventos p {
-    margin: 5px 0px 5px 0px;
+    margin: 5px 0px;
 }
 
 #noti-btn {
@@ -448,12 +505,40 @@ width: 65%;
         grid-template-rows: repeat(2, 1fr);
         grid-template-areas: "event1 event2" "event3 event4";
     }
-    
+
+    #contain-us {
+        grid-template-columns: 1fr;
+        grid-template-areas: "sec2" "sec1" "sec3" "sec4";
+        gap: 10px;
+    }
+
+    #contain-us #sec3 {
+        width: 90%;
+    }
+    #contain-us #sec3 img {
+        width: 50%;
+        display: flex;
+        margin: 0 auto;
+    }
 }
 
 @media (max-width:768px) {
     #main-contacto {
         width: 60%;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .grid-events {
+        font-size: 16px;
+    }
+
+    #container-faq {
+        grid-template-columns: 3fr 2fr;
+        grid-template-areas: "sec5 sec6";
+        gap: 20px;
     }
 }
 
@@ -467,7 +552,7 @@ width: 65%;
         flex-direction: column;
     }
 
-    #main-faq summary, p {
+    #main-faq summary, #main-faq p {
         font-size: 4vw;
     }
 
@@ -523,13 +608,14 @@ width: 65%;
         width: 100%;
     }
 
-    footer {
-        text-align: center;
-    }
-
     main {
         width: 65%;
-        font-size: 4vw;
+        font-size: 2.8vw;
+    }
+    
+    #container-faq {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "sec5" "sec6";
     }
 }
 
@@ -541,10 +627,15 @@ width: 65%;
     }
 }
 
+@media (max-width: 375px) {
+    main {
+        font-size: 4.5vw;
+    }
+}
+
 @media (max-width: 320px) {
     main {
         width: 65%;
-        font-size: 4.5vw;
     }
 
     main h2 {

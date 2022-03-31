@@ -26,14 +26,14 @@
         <ul class="h">
           <li><a href="../index.html">Inicio</a></li>
           <li><a href="contacto.html">Contáctanos</a></li>
-          <li><a href="mistery.html">Cuadros</a></li>
+          <li><a href="obras.html">Cuadros</a></li>
           <li><a href="nosotros.html">Nosotros</a></li>
           <li><a href="FAQ.html">FAQ</a></li>
           <li>
             <a href="#">Cuenta</a>
             <ul id="v">
-              <li><a href="carrito.html">Favoritos</a></li>
-              <li><a href="metamask.html">Mis Aportes</a></li>
+              <li><a href="favoritos.html">Favoritos</a></li>
+              <li><a href="aportes.html">Mis Aportes</a></li>
               <li>
                 <a href="eventos.html">Eventos</a>
               </li>
@@ -44,44 +44,50 @@
     </header>
 
     <main id="main-contacto" class="mains">
-      <label action="#" method="get">
+      
+      <form action="#" method="get">
         
-          <h3>Contáctanos!</h3>
-          <label for="name">
+          
+            <h3>Contáctanos!</h3>
+          
             <p>Nombre y Apellido:</p>
-            <input type="text" placeholder="Escriba su nombre..." name="name" id="name" required
+            <label for="name">
+            <input type="text" placeholder="Escriba su nombre..." name="name" id="name" 
           /></label>
-          <label for="date">
+          
             <p>Fecha de Nacimiento:</p>
-            <input type="date" name="date" id="date" required>
+            <label for="date">
+            <input type="date" name="date" id="date" >
           </label>
-          <label for="age">
+          
             <p>Edad:</p>
-            <input type="number" name="age" id="age" placeholder="Escriba su edad..." required />
+            <label for="age">
+            <input type="number" name="age" id="age" placeholder="Escriba su edad..."  />
           </label>
-            <p>Indique su género:</p>
-            <label for="genre"></label>
-            <select name="genre" id="genre" required>
-              <option id="poke" disabled selected></option>
+            <p>Género:</p>
+            <label for="genre">
+            <select name="genre" id="genre" >
+              <option id="poke" disabled selected>Por favor, indique su género</option>
               <option value="mas">Masculino</option>
               <option value="fem">Femenino</option>
               <option value="oth">Otro</option>
             </select>
           </label>
-        </div>
-          <label for="email"
-            ><p>Email:</p>
-            <input type="email" id="email" placeholder="Escriba su email..."  required/>
-            <p>Comentarios:</p></label
-          >
+          
+          <p>Email:</p>
+          <label for="email">
+            <input type="email" id="email" placeholder="Escriba su email..."  />
+          </label>
+            <p>Comentarios:</p>
           <label for="comment">
-            <textarea name="comment" cols="30" rows="10">
+            <textarea name="comment" id="comment" cols="30" rows="10">
 Agradecemos cualquier aporte ^^.</textarea
             >
           </label>
           <div><input type="submit" name="enviar" id="enviar" class="btn" value="Enviar" /></div>
         
       </form>
+
     </main>
 
     <footer id="cell">
