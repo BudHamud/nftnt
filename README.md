@@ -1,2 +1,2 @@
 # nftnt
-Final project of web design course
+Final project of web design course in CoderHouse
