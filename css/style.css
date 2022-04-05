@@ -9,6 +9,7 @@
 html {
     min-height: 100%;
     position: relative;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -22,7 +23,18 @@ body {
 
 a {
     text-decoration: none;
-    color: black;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: header;
+}
+
+footer {
+    grid-area: footer;
 }
 
 header {
@@ -182,7 +194,10 @@ main h2 {
     padding: 0px 15px;
     border-radius: 20px;
     font-size: 16px;
+<<<<<<< HEAD
     
+=======
+>>>>>>> 5acc9a1 (new branch)
 }
 
 .location {
@@ -267,7 +282,10 @@ footer #github:hover {
     text-decoration: none;
     display: grid;
     grid-template-columns: 1fr 4fr;
+<<<<<<< HEAD
     /* grid-template-rows: */
+=======
+>>>>>>> 5acc9a1 (new branch)
     grid-template-areas: "sec2 sec1" "sec3 sec4";
     gap: 20px;
 }
@@ -421,16 +439,18 @@ footer #github:hover {
 
 /* Todas las Páginas */
 
+<<<<<<< HEAD
 #main-metamask, #main-fav {
+=======
+#main-aportes, #main-fav {
+>>>>>>> 5acc9a1 (new branch)
 text-align: center;
 display: flex;
 flex-direction: column;
 width: 65%;
 }
 
-/* Mis Aportes */
-
-#main-metamask input {
+#main-aportes input {
     margin-top: 20px;
 }
 
@@ -448,11 +468,26 @@ width: 65%;
 .grid-events {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+<<<<<<< HEAD
+=======
+    grid-template-rows: repeat(2, 1fr);
+>>>>>>> 5acc9a1 (new branch)
     grid-template-areas: "event1 event2 event3" "event4 event5 event6";
     justify-items: center;
     gap: 20px;
 }
 
+<<<<<<< HEAD
+=======
+.grid-events img {
+    border-radius: 20px;
+}
+
+.grid-events img:hover {
+    transform: scale(1.25);
+}
+
+>>>>>>> 5acc9a1 (new branch)
 .event-1 {
     grid-area: event1;
     align-self: center;
@@ -493,6 +528,16 @@ width: 65%;
     margin-left: 10px;
 }
 
+<<<<<<< HEAD
+=======
+/* Flecha */
+
+#up i{
+    color:#CC9544;
+    font-size: 22px;
+}
+
+>>>>>>> 5acc9a1 (new branch)
 /* Responsive */
 
 @media (max-width:1024px) {
@@ -523,12 +568,100 @@ width: 65%;
 }
 
 @media (max-width:768px) {
+<<<<<<< HEAD
+    #main-contacto {
+        width: 60%;
+    }
+=======
+
+    /* Contacto */
+
     #main-contacto {
         width: 60%;
     }
 
+    /* Eventos */
+    
+    .grid-events {
+        font-size: 16px;
+    }
+
+    /* FAQ */
+    
+    #container-faq {
+        grid-template-columns: 3fr 2fr;
+        grid-template-areas: "sec5 sec6";
+        gap: 20px;
+    }
+    
+    #sec6 {
+        width: 100%;
+    }
+
+    /* Footer */
+>>>>>>> 5acc9a1 (new branch)
+
     footer {
         text-align: center;
+    }
+}
+
+@media (max-width:600px) {
+    
+    /* Main */
+
+    main {
+        width: 65%;
+        font-size: 2.8vw;
+    }
+
+    main h2 {
+        font-size: 6vw;
+    }
+    
+    /* Header */
+
+    nav {
+        padding-bottom: 10px;
+    }
+    
+    nav .h {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgb(95, 38, 16);
+        transform: translateX(-135px);
+        height: 500px;
+        z-index: 2;
+    }
+
+    nav .h.show {
+        transform: translateX(0px);
+        transform: translateY(70.5px);
+    }
+
+    .menu-btn {
+        color: white;
+    }
+
+    #v {
+        display:block;
+        width: auto;
+    }
+
+    /* Mis Aportes */
+
+    #main-aportes {
+    display: flex;
+    padding: 50px 5px;
+    width: 95%;
+    }
+
+    /* FAQ */
+
+    #main-faq #sec5, #sec6 {
+        width: 100%;
     }
 
     .grid-events {
@@ -564,6 +697,7 @@ width: 65%;
         margin-bottom: 5vw;
     }
     
+<<<<<<< HEAD
     nav {
         padding-bottom: 10px;
     }
@@ -596,6 +730,14 @@ width: 65%;
         display:block;
         width: auto;
     }
+=======
+    #container-faq {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "sec5" "sec6";
+    }
+
+    /* Cuadros/Obras */
+>>>>>>> 5acc9a1 (new branch)
 
     .art {
         grid-template-columns: repeat(1, 1fr);
@@ -607,6 +749,7 @@ width: 65%;
     .cuadros-img {
         width: 100%;
     }
+<<<<<<< HEAD
 
     main {
         width: 65%;
@@ -623,17 +766,38 @@ width: 65%;
     .grid-events {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, 1fr);
+=======
+}
+
+@media (max-width: 425px) {
+
+    /* Eventos */
+
+    .grid-events {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+>>>>>>> 5acc9a1 (new branch)
         grid-template-areas: "event1" "event2" "event3" "event4";
     }
 }
 
 @media (max-width: 375px) {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5acc9a1 (new branch)
     main {
         font-size: 4.5vw;
     }
 }
 
 @media (max-width: 320px) {
+<<<<<<< HEAD
+=======
+
+    /* Main */
+
+>>>>>>> 5acc9a1 (new branch)
     main {
         width: 65%;
     }
@@ -642,6 +806,11 @@ width: 65%;
         font-size: 7vw;
     }
 
+<<<<<<< HEAD
+=======
+    /* Contacto */
+
+>>>>>>> 5acc9a1 (new branch)
     #main-contacto {
         width: 65%;
         display: flex;
