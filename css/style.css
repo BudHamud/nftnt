@@ -37,6 +37,18 @@ footer {
     grid-area: footer;
 }
 
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: header;
+}
+
+footer {
+    grid-area: footer;
+}
+
 /* Header */
 
 .menu-btn {
@@ -182,6 +194,10 @@ main h2 {
     padding: 0px 15px;
     border-radius: 20px;
     font-size: 16px;
+<<<<<<< HEAD
+=======
+    
+>>>>>>> a3fa4ed619a977ed5b1f0a461423187519471c8c
 }
 
 .location {
@@ -266,6 +282,10 @@ footer #github:hover {
     text-decoration: none;
     display: grid;
     grid-template-columns: 1fr 4fr;
+<<<<<<< HEAD
+=======
+    /* grid-template-rows: */
+>>>>>>> a3fa4ed619a977ed5b1f0a461423187519471c8c
     grid-template-areas: "sec2 sec1" "sec3 sec4";
     gap: 20px;
 }
@@ -419,7 +439,11 @@ footer #github:hover {
 
 /* Todas las Páginas */
 
+<<<<<<< HEAD
 #main-aportes, #main-fav {
+=======
+#main-metamask, #main-fav {
+>>>>>>> a3fa4ed619a977ed5b1f0a461423187519471c8c
 text-align: center;
 display: flex;
 flex-direction: column;
@@ -444,12 +468,16 @@ width: 65%;
 .grid-events {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+<<<<<<< HEAD
     grid-template-rows: repeat(2, 1fr);
+=======
+>>>>>>> a3fa4ed619a977ed5b1f0a461423187519471c8c
     grid-template-areas: "event1 event2 event3" "event4 event5 event6";
     justify-items: center;
     gap: 20px;
 }
 
+<<<<<<< HEAD
 .grid-events img {
     border-radius: 20px;
 }
@@ -458,6 +486,8 @@ width: 65%;
     transform: scale(1.25);
 }
 
+=======
+>>>>>>> a3fa4ed619a977ed5b1f0a461423187519471c8c
 .event-1 {
     grid-area: event1;
     align-self: center;
@@ -498,6 +528,7 @@ width: 65%;
     margin-left: 10px;
 }
 
+<<<<<<< HEAD
 /* Flecha */
 
 #up i{
@@ -505,6 +536,8 @@ width: 65%;
     font-size: 22px;
 }
 
+=======
+>>>>>>> a3fa4ed619a977ed5b1f0a461423187519471c8c
 /* Responsive */
 
 @media (max-width:1024px) {
@@ -535,6 +568,7 @@ width: 65%;
 }
 
 @media (max-width:768px) {
+<<<<<<< HEAD
 
     /* Contacto */
 
@@ -561,6 +595,11 @@ width: 65%;
     }
 
     /* Footer */
+=======
+    #main-contacto {
+        width: 60%;
+    }
+>>>>>>> a3fa4ed619a977ed5b1f0a461423187519471c8c
 
     footer {
         text-align: center;
@@ -625,6 +664,23 @@ width: 65%;
         width: 100%;
     }
 
+    .grid-events {
+        font-size: 16px;
+    }
+
+    #container-faq {
+        grid-template-columns: 3fr 2fr;
+        grid-template-areas: "sec5 sec6";
+        gap: 20px;
+    }
+}
+
+@media (max-width:600px) {
+
+    #main-faq #sec5, #sec6 {
+        width: 100%;
+    }
+
     #main-faq article {
         flex-direction: column;
     }
@@ -641,12 +697,47 @@ width: 65%;
         margin-bottom: 5vw;
     }
     
+<<<<<<< HEAD
     #container-faq {
         grid-template-columns: repeat(1, 1fr);
         grid-template-areas: "sec5" "sec6";
     }
 
     /* Cuadros/Obras */
+=======
+    nav {
+        padding-bottom: 10px;
+    }
+
+    main h2 {
+        font-size: 6vw;
+    }
+
+    nav .h {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgb(95, 38, 16);
+        transform: translateX(-135px);
+        height: 500px;
+        z-index: 2;
+    }
+
+    nav .h.show {
+        transform: translateX(0px);
+        transform: translateY(71.5px);
+    }
+
+    .menu-btn {
+        color: white;
+    }
+
+    #v {
+        display:block;
+        width: auto;
+    }
+>>>>>>> a3fa4ed619a977ed5b1f0a461423187519471c8c
 
     .art {
         grid-template-columns: repeat(1, 1fr);
@@ -658,6 +749,7 @@ width: 65%;
     .cuadros-img {
         width: 100%;
     }
+<<<<<<< HEAD
 }
 
 @media (max-width: 425px) {
@@ -667,21 +759,45 @@ width: 65%;
     .grid-events {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(4, 1fr);
+=======
+
+    main {
+        width: 65%;
+        font-size: 2.8vw;
+    }
+    
+    #container-faq {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "sec5" "sec6";
+    }
+}
+
+@media (max-width: 425px) {
+    .grid-events {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+>>>>>>> a3fa4ed619a977ed5b1f0a461423187519471c8c
         grid-template-areas: "event1" "event2" "event3" "event4";
     }
 }
 
 @media (max-width: 375px) {
+<<<<<<< HEAD
 
+=======
+>>>>>>> a3fa4ed619a977ed5b1f0a461423187519471c8c
     main {
         font-size: 4.5vw;
     }
 }
 
 @media (max-width: 320px) {
+<<<<<<< HEAD
 
     /* Main */
 
+=======
+>>>>>>> a3fa4ed619a977ed5b1f0a461423187519471c8c
     main {
         width: 65%;
     }
@@ -690,8 +806,11 @@ width: 65%;
         font-size: 7vw;
     }
 
+<<<<<<< HEAD
     /* Contacto */
 
+=======
+>>>>>>> a3fa4ed619a977ed5b1f0a461423187519471c8c
     #main-contacto {
         width: 65%;
         display: flex;
