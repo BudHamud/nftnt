@@ -15,22 +15,25 @@
 
   <body>
     <header>
+      <div class="menu-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
       <nav>
         <div id="logo">
           <img src="../images/logo.png" alt="" />
           <h1>NFTn't</h1>
         </div>
-        <ul id="h">
+        <ul class="h">
           <li><a href="../index.html">Inicio</a></li>
           <li><a href="contacto.html">Contáctanos</a></li>
-          <li><a href="mistery.html">Cuadros</a></li>
+          <li><a href="obras.html">Cuadros</a></li>
           <li><a href="nosotros.html">Nosotros</a></li>
           <li><a href="FAQ.html">FAQ</a></li>
           <li>
             <a href="#">Cuenta</a>
             <ul id="v">
-              <li><a href="carrito.html">Favoritos</a></li>
-              <li><a href="metamask.html">Mis Aportes</a></li>
+              <li><a href="favoritos.html">Favoritos</a></li>
+              <li><a href="aportes.html">Mis Aportes</a></li>
               <li>
                 <a href="eventos.html">Eventos</a>
               </li>
@@ -41,44 +44,50 @@
     </header>
 
     <main id="main-contacto" class="mains">
+      
       <form action="#" method="get">
-        <fieldset>
-          <legend><h3>Contáctanos!</h3></legend>
-          <label for="name">
+        
+          
+            <h3>Contáctanos!</h3>
+          
             <p>Nombre y Apellido:</p>
-            <input type="text" placeholder="Escriba su nombre..." name="name" id="name" required
+            <label for="name">
+            <input type="text" placeholder="Escriba su nombre..." name="name" id="name" 
           /></label>
-          <label for="date">
+          
             <p>Fecha de Nacimiento:</p>
-            <input type="date" name="date" id="date" required>
+            <label for="date">
+            <input type="date" name="date" id="date" >
           </label>
-          <label for="age">
+          
             <p>Edad:</p>
-            <input type="number" name="age" id="age" placeholder="Escriba su edad..." required />
+            <label for="age">
+            <input type="number" name="age" id="age" placeholder="Escriba su edad..."  />
           </label>
-            <p>Indique su género:</p>
-            <label for="fem">
-              <input type="radio" name="fem-mas-e" id="fem" value="fem">Femenino
-            </label>
-            <label for="mas">
-              <input type="radio" name="fem-mas-e" id="mas" value="mas">Masculino
-            </label>
-            <label for="otro">
-              <input type="radio" name="fem-mas-e" id="otro" value="otro">Otro
+            <p>Género:</p>
+            <label for="genre">
+            <select name="genre" id="genre" >
+              <option id="poke" disabled selected>Por favor, indique su género</option>
+              <option value="mas">Masculino</option>
+              <option value="fem">Femenino</option>
+              <option value="oth">Otro</option>
+            </select>
           </label>
-          <label for="email"
-            ><p>Email:</p>
-            <input type="email" id="email" placeholder="Escriba su email..."  required/>
-            <p>Comentarios:</p></label
-          >
+          
+          <p>Email:</p>
+          <label for="email">
+            <input type="email" id="email" placeholder="Escriba su email..."  />
+          </label>
+            <p>Comentarios:</p>
           <label for="comment">
-            <textarea name="comment" cols="30" rows="10">
+            <textarea name="comment" id="comment" cols="30" rows="10">
 Agradecemos cualquier aporte ^^.</textarea
             >
           </label>
           <div><input type="submit" name="enviar" id="enviar" class="btn" value="Enviar" /></div>
-        </fieldset>
+        
       </form>
+
     </main>
 
     <footer id="cell">
@@ -90,5 +99,7 @@ Agradecemos cualquier aporte ^^.</textarea
       <a href="https://github.com/BudHamud" target="_blank"
         ><i id="github" class="fa-brands fa-github"></i></a>
     </footer>
+
+    <script src="../scripts/script.js"></script>
   </body>
 </html>

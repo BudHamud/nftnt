@@ -10,26 +10,30 @@
       src="https://kit.fontawesome.com/d6cbf412fd.js"
       crossorigin="anonymous"
     ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>NFTn't</title>
   </head>
   <body>
     <header>
+      <div class="menu-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
       <nav>
         <div id="logo">
         <img src="images/logo.png" alt="">
         <h1>NFTn't</h1>
       </div>
-        <ul id="h">
+        <ul class="h">
           <li><a href="index.html">Inicio</a></li>
           <li><a href="pages/contacto.html">Contáctanos</a></li>
-          <li><a href="pages/mistery.html">Cuadros</a></li>
+          <li><a href="pages/obras.html">Cuadros</a></li>
           <li><a href="pages/nosotros.html">Nosotros</a></li>
-          <li id=""><a href="pages/FAQ.html">FAQ</a></li>
+          <li><a href="pages/FAQ.html">FAQ</a></li>
           <li>
             <a href="#">Cuenta</a>
             <ul id="v">
-              <li><a href="pages/carrito.html">Favoritos</a></li>
-              <li><a href="pages/metamask.html">Mis Aportes</a></li>
+              <li><a href="pages/favoritos.html">Favoritos</a></li>
+              <li><a href="pages/aportes.html">Mis Aportes</a></li>
               <li>
                 <a href="pages/eventos.html">Eventos</a>
               </li>
@@ -41,12 +45,12 @@
 
     <main>
       <h2>Mural de Graffitis</h2>
-    <section id="main-inicio">
+    <section class="art">
       <div class="cuadros">
         <h4>Mano MRN</h4>
         <img class="cuadros-img" src="images/a1.jpg" alt="Imagen Mapache" />
         <p class="precio"><i class="fa-solid fa-location-dot location"></i>Rusia</p>
-        <a href="https://twitter.com/DariaBuntaria"><input class="btn" type="submit" value="Artista" /></a>
+        <a class="btn" target="_blank" href="https://www.instagram.com/myatezhny39/">Artista</a>
         <i class="fa-regular fa-heart"></i>
       </div>
 
@@ -59,7 +63,7 @@
         />
         <p class="precio">
           <i class="fa-solid fa-location-dot location"></i>Richmond, United States </p>
-        <a href="https://twitter.com/Grantwills22"><input class="btn" type="submit" value="Artista" /></a>
+        <a class="btn" target="_blank" href="https://twitter.com/Grantwills22">Artista</a>
         <i class="fa-regular fa-heart"></i>
       </div>
 
@@ -73,7 +77,7 @@
         <p class="precio">
           <i class="fa-solid fa-location-dot location"></i>Australia  
         </p>
-        <a href="https://www.instagram.com/kellymlacy/"><input class="btn" type="submit" value="Artista" /></a>
+        <a class="btn" target="_blank" href="https://www.instagram.com/kellymlacy/">Artista</a>
         <i class="fa-regular fa-heart"></i>
       </div>
 
@@ -87,7 +91,7 @@
         <p class="precio">
           <i class="fa-solid fa-location-dot location"></i>Coeur d'Alene, USA 
         </p>
-        <a href="https://twitter.com/TimMossholder"><input class="btn" type="submit" value="Artista" /></a>
+        <a class="btn" target="_blank" href="https://twitter.com/TimMossholder">Artista</a>
         <i class="fa-regular fa-heart"></i>
       </div>
 
@@ -101,7 +105,7 @@
         <p class="precio">
           <i class="fa-solid fa-location-dot location"></i>Montreal, Canada 
         </p>
-        <a href="https://www.instagram.com/fleurrustique/"><input class="btn" type="submit" value="Artista" /></a>
+        <a class="btn" target="_blank" href="https://www.instagram.com/fleurrustique/">Artista</a>
         <i class="fa-regular fa-heart"></i>
       </div>
 
@@ -115,7 +119,7 @@
         <p class="precio">
           <i class="fa-solid fa-location-dot location"></i>Desconocido 
         </p>
-        <a href="https://www.instagram.com/Introspectivedsgn/"><input class="btn" type="submit" value="Artista" /></a>
+        <a class="btn" target="_blank" href="https://www.instagram.com/Introspectivedsgn/">Artista</a>
         <i class="fa-regular fa-heart"></i>
       </div>
 
@@ -125,7 +129,7 @@
         <p class="precio">
           <i class="fa-solid fa-location-dot location"></i>Daguestán, Rusia
         </p>
-        <a href="https://www.instagram.com/cottonbro/"><input class="btn" type="submit" value="Artista" /></a>
+        <a class="btn" target="_blank" href="https://www.instagram.com/cottonbro/">Artista</a>
         <i class="fa-regular fa-heart"></i>
       </div>
 
@@ -135,7 +139,7 @@
           <p class="precio">
             <i class="fa-solid fa-location-dot location"></i>Roma, Italia
           </p>
-          <a href="https://www.pexels.com/es-es/@danilo-vinci-864361"><input class="btn" type="submit" value="Artista" /></a>
+          <a class="btn" target="_blank" href="https://www.pexels.com/es-es/@danilo-vinci-864361">Artista</a>
           <i class="fa-regular fa-heart"></i>
       </div>
 
@@ -145,12 +149,17 @@
         <p class="precio">
           <i class="fa-solid fa-location-dot location"></i>Detroit, USA
         </p>
-        <a href="https://www.pexels.com/es-es/@travis-rupert-379220"><input class="btn" type="submit" value="Artista" /></a>
+        <a class="btn" target="_blank" href="https://www.pexels.com/es-es/@travis-rupert-379220">Artista</a>
         <i class="fa-regular fa-heart"></i>
     </div>
     </section>
+    <div id="up" data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom">
+    <a id="up" href="#logo"><i data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom" class="fa-solid fa-arrow-up"></i></a>
+    </div>
     </main>
-
+    
     <footer>
       <p id="foot-text">¡Seguinos en las redes sociales!</p>
       <a href="https://twitter.com/AdrielCamacho" target="_blank"
@@ -160,5 +169,12 @@
       <a href="https://github.com/BudHamud" target="_blank"
         ><i id="github" class="fa-brands fa-github"></i></a>
     </footer>
+    <!-- Mi JS -->
+    <script src="scripts/script.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

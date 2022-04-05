@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../images/nftnt.ico" type="image/x-icon" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script
       src="https://kit.fontawesome.com/d6cbf412fd.js"
       crossorigin="anonymous"
@@ -14,22 +15,25 @@
 </head>
 <body>
   <header>
+    <div class="menu-btn">
+      <i class="fa-solid fa-bars"></i>
+    </div>
     <nav>
       <div id="logo">
         <img src="../images/logo.png" alt="" />
         <h1>NFTn't</h1>
       </div>
-      <ul id="h">
+      <ul class="h">
         <li><a href="../index.html">Inicio</a></li>
         <li><a href="contacto.html">Contáctanos</a></li>
-        <li><a href="mistery.html">Cuadros</a></li>
+        <li><a href="obras.html">Cuadros</a></li>
         <li><a href="nosotros.html">Nosotros</a></li>
         <li><a href="FAQ.html">FAQ</a></li>
         <li>
           <a href="#">Cuenta</a>
           <ul id="v">
-            <li><a href="carrito.html">Favoritos</a></li>
-            <li><a href="metamask.html">Mis Aportes</a></li>
+            <li><a href="favoritos.html">Favoritos</a></li>
+            <li><a href="aportes.html">Mis Aportes</a></li>
             <li>
               <a href="eventos.html">Eventos</a>
             </li>
@@ -39,12 +43,13 @@
     </nav>
   </header>
 
-    <main id="main-mistery" class="mains">
+    <main>
+      <section class="art">
       <div class="cuadros">
         <p>Mapache</p>
         <img class="cuadros-img" src="../images/1.jpg" alt="Imagen de Mapache" />
-        <p class="precio">by Adro</p>
-        <a target="_blank" href="https://www.instagram.com/p/CbbCtlaOv13/"><input target="_blank" class="btn" type="submit" value="Valorar" /></a>
+        <p class="title-cuadros">by Adro</p>
+        <a class="btn" target="_blank" href="https://www.instagram.com/p/CbbCtlaOv13/">Valorar</a>
       </div>
 
       <div class="cuadros">
@@ -54,9 +59,9 @@
           src="../images/2.jpg"
           alt="Cocker que va al gym"
         />
-        <p class="precio">
+        <p class="title-cuadros">
           by Adro</p>
-        <a target="_blank" href="https://www.instagram.com/p/CbbCruoOozg/"><input target="_blank" class="btn" type="submit" value="Valorar" /></a>
+        <a class="btn" target="_blank" href="https://www.instagram.com/p/CbbCruoOozg/">Valorar</a>
       </div>
 
       <div class="cuadros">
@@ -66,10 +71,10 @@
           src="../images/3.jpg"
           alt="Imagen de Gatito de Redes"
         />
-        <p class="precio">
+        <p class="title-cuadros">
           by Adro
         </p>
-        <a target="_blank" href="https://www.instagram.com/p/CbbCpZUOA1l/"><input target="_blank" class="btn" type="submit" value="Valorar" /></a>
+        <a class="btn" target="_blank" href="https://www.instagram.com/p/CbbCpZUOA1l/">Valorar</a>
       </div>
 
       <div class="cuadros">
@@ -79,10 +84,10 @@
           src="../images/4.jpg"
           alt="Imagen de Elefante PHP Senior"
         />
-        <p class="precio">
+        <p class="title-cuadros">
           by Adro
         </p>
-        <a target="_blank" href="https://www.instagram.com/p/CbbCm6gOOpJ/"><input target="_blank" class="btn" type="submit" value="Valorar" /></a>
+        <a class="btn" target="_blank" href="https://www.instagram.com/p/CbbCm6gOOpJ/">Valorar</a>
       </div>
 
       <div class="cuadros">
@@ -92,10 +97,10 @@
           src="../images/5.jpg"
           alt="Imagen de Cangrejo Terraplanista"
         />
-        <p class="precio">
+        <p class="title-cuadros">
           by Adro
         </p>
-        <a target="_blank" href="https://www.instagram.com/p/CbbCko9OfFD/"><input target="_blank" class="btn" type="submit" value="Valorar" /></a>
+        <a class="btn" target="_blank" href="https://www.instagram.com/p/CbbCko9OfFD/">Valorar</a>
       </div>
 
       <div class="cuadros">
@@ -105,10 +110,10 @@
           src="../images/6.jpg"
           alt="Imagen de Conejo Feliz"
         />
-        <p class="precio">
+        <p class="title-cuadros">
           by Adro
         </p>
-        <a target="_blank" href="https://www.instagram.com/p/CbbCiAVu7_G/"><input target="_blank" class="btn" type="submit" value="Valorar" /></a>
+        <a class="btn" target="_blank" href="https://www.instagram.com/p/CbbCiAVu7_G/">Valorar</a>
       </div>
 
       <div class="cuadros">
@@ -118,10 +123,10 @@
           src="../images/7.jpg"
           alt="Hamster Lescano tocando el piano"
         />
-        <p class="precio">
+        <p class="title-cuadros">
           by Adro
         </p>
-        <a target="_blank" href="https://www.instagram.com/p/CbbCfJouhcB/"><input target="_blank" class="btn" type="submit" value="Valorar" /></a>
+        <a class="btn" target="_blank" href="https://www.instagram.com/p/CbbCfJouhcB/">Valorar</a>
       </div>
 
       <div class="cuadros">
@@ -131,10 +136,10 @@
           src="../images/8.jpg"
           alt="Imagen de Gorila Peronista"
         />
-        <p class="precio">
+        <p class="title-cuadros">
           by Adro
         </p>
-        <a target="_blank" href="https://www.instagram.com/p/CbbCcEBuCr4/"><input target="_blank" class="btn" type="submit" value="Valorar" /></a>
+        <a class="btn" target="_blank" href="https://www.instagram.com/p/CbbCcEBuCr4/">Valorar</a>
       </div>
 
       <div class="cuadros">
@@ -144,11 +149,17 @@
           src="../images/9.png"
           alt="Imagen de Pepe"
         />
-        <p class="precio">
+        <p class="title-cuadros">
           by Adro
         </p>
-        <a target="_blank" href="https://www.instagram.com/p/CbbCZNdOlqJ/"><input target="_blank" class="btn" type="submit" value="Valorar" /></a>
+        <a class="btn" target="_blank" href="https://www.instagram.com/p/CbbCZNdOlqJ/">Valorar</a>
       </div>
+    </section>
+    <div id="up" data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom">
+    <a href="#logo"><i data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom" class="fa-solid fa-arrow-up"></i></a>
+    </div>
     </main>
 
     <footer>
@@ -160,5 +171,13 @@
       <a href="https://github.com/BudHamud" target="_blank"
         ><i id="github" class="fa-brands fa-github"></i></a>
     </footer>
+
+    <!-- Mi JS -->
+    <script src="../scripts/script.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
