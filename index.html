@@ -6,171 +6,304 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="images/nftnt.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/d6cbf412fd.js"
       crossorigin="anonymous"
     ></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <title>NFTn't</title>
   </head>
   <body>
     <header>
-      <div class="menu-btn">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-      <nav>
-        <div id="logo">
-        <img src="images/logo.png" alt="">
-        <h1>NFTn't</h1>
-      </div>
-        <ul class="h">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="pages/contacto.html">Contáctanos</a></li>
-          <li><a href="pages/obras.html">Cuadros</a></li>
-          <li><a href="pages/nosotros.html">Nosotros</a></li>
-          <li><a href="pages/FAQ.html">FAQ</a></li>
-          <li>
-            <a href="#">Cuenta</a>
-            <ul id="v">
-              <li><a href="pages/favoritos.html">Favoritos</a></li>
-              <li><a href="pages/aportes.html">Mis Aportes</a></li>
-              <li>
-                <a href="pages/eventos.html">Eventos</a>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img id="logo" src="images/logo.png" alt="">NFTn't</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/contacto.html">Contáctanos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/obras.html">Cuadros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/FAQ.html">FAQ</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Cuenta
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="pages/favoritos.html">Favoritos</a></li>
+                  <li><a class="dropdown-item" href="pages/aportes.html">Mis Aportes</a></li>
+                  <li><a class="dropdown-item" href="pages/eventos.html">Eventos</a></li>
+                </ul>
               </li>
             </ul>
-          </li>
-        </ul>
+          </div>
+        </div>
       </nav>
     </header>
 
     <main>
+      
+
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/sel1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Quienes Somos</h5>
+              <p>Conocenos!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/sel2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Quién eres?</h5>
+              <p>Alguna vez te lo planteaste?</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/sel3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Quien ERES TÚ?</h5>
+              <p>IMPOSTOR!</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      
       <h2>Mural de Graffitis</h2>
-    <section class="art">
-      <div class="cuadros">
-        <h4>Mano MRN</h4>
-        <img class="cuadros-img" src="images/a1.jpg" alt="Imagen Mapache" />
-        <p class="precio"><i class="fa-solid fa-location-dot location"></i>Rusia</p>
-        <a class="btn" target="_blank" href="https://www.instagram.com/myatezhny39/">Artista</a>
-        <i class="fa-regular fa-heart"></i>
-      </div>
-
-      <div class="cuadros">
-        <h4>Collage de Graffitis</h4>
-        <img
-          class="cuadros-img"
-          src="images/a2.jpg"
-          alt="Imagen Cocker de Gym"
-        />
-        <p class="precio">
-          <i class="fa-solid fa-location-dot location"></i>Richmond, United States </p>
-        <a class="btn" target="_blank" href="https://twitter.com/Grantwills22">Artista</a>
-        <i class="fa-regular fa-heart"></i>
-      </div>
-
-      <div class="cuadros">
-        <h4>by Rone</h4>
-        <img
-          class="cuadros-img"
-          src="images/a3.jpg"
-          alt="Imagen Gatito de Redes"
-        />
-        <p class="precio">
-          <i class="fa-solid fa-location-dot location"></i>Australia  
-        </p>
-        <a class="btn" target="_blank" href="https://www.instagram.com/kellymlacy/">Artista</a>
-        <i class="fa-regular fa-heart"></i>
-      </div>
-
-      <div class="cuadros">
-        <h4>Mushu, Mulán</h4>
-        <img
-          class="cuadros-img"
-          src="images/a4.jpg"
-          alt="Imagen Elefante PHP"
-        />
-        <p class="precio">
-          <i class="fa-solid fa-location-dot location"></i>Coeur d'Alene, USA 
-        </p>
-        <a class="btn" target="_blank" href="https://twitter.com/TimMossholder">Artista</a>
-        <i class="fa-regular fa-heart"></i>
-      </div>
-
-      <div class="cuadros">
-        <h4>Clifford entre Zombies</h4>
-        <img
-          class="cuadros-img"
-          src="images/a5.jpg"
-          alt="Imagen Cangrejo Terraplanista"
-        />
-        <p class="precio">
-          <i class="fa-solid fa-location-dot location"></i>Montreal, Canada 
-        </p>
-        <a class="btn" target="_blank" href="https://www.instagram.com/fleurrustique/">Artista</a>
-        <i class="fa-regular fa-heart"></i>
-      </div>
-
-      <div class="cuadros">
-        <h4>Gallo Astronauta</h4>
-        <img
-          class="cuadros-img"
-          src="images/a6.jpg"
-          alt="Imagen Conejo Feliz"
-        />
-        <p class="precio">
-          <i class="fa-solid fa-location-dot location"></i>Desconocido 
-        </p>
-        <a class="btn" target="_blank" href="https://www.instagram.com/Introspectivedsgn/">Artista</a>
-        <i class="fa-regular fa-heart"></i>
-      </div>
-
-      <div class="cuadros">
-        <h4>Comiendo Ramen</h4>
-        <img class="cuadros-img" src="images/a7.jpg" alt="Imagen Hamster Lescano" />
-        <p class="precio">
-          <i class="fa-solid fa-location-dot location"></i>Daguestán, Rusia
-        </p>
-        <a class="btn" target="_blank" href="https://www.instagram.com/cottonbro/">Artista</a>
-        <i class="fa-regular fa-heart"></i>
-      </div>
+      <section class="art">
+        <div class="cuadros">
+          <h5>Mano MRN</h5>
+          <img class="cuadros-img" src="images/a1.jpg" alt="Graffiti de mano" />
+          <p class="precio">
+            <i class="fa-solid fa-location-dot location"></i>Rusia
+          </p>
+          <a
+            class="btn btn-outline-light"
+            target="_blank"
+            href="https://www.instagram.com/myatezhny39/"
+            >Artista</a
+          >
+          <i class="fa-regular fa-heart"></i>
+        </div>
 
         <div class="cuadros">
-          <h4>Ojos en el Otoño</h4>
-          <img class="cuadros-img" src="images/a8.jpg" alt="Imagen Gorila Peronista" />
+          <h5>Collage de Graffitis</h5>
+          <img
+            class="cuadros-img"
+            src="images/a2.jpg"
+            alt="Collage de graffitis"
+          />
+          <p class="precio">
+            <i class="fa-solid fa-location-dot location"></i>Richmond, United
+            States
+          </p>
+          <a class="btn btn-outline-light" target="_blank" href="https://twitter.com/Grantwills22"
+            >Artista</a
+          >
+          <i class="fa-regular fa-heart"></i>
+        </div>
+
+        <div class="cuadros">
+          <h5>by Rone</h5>
+          <img
+            class="cuadros-img"
+            src="images/a3.jpg"
+            alt="Graffiti de Rone"
+          />
+          <p class="precio">
+            <i class="fa-solid fa-location-dot location"></i>Australia
+          </p>
+          <a
+            class="btn btn-outline-light"
+            target="_blank"
+            href="https://www.instagram.com/kellymlacy/"
+            >Artista</a
+          >
+          <i class="fa-regular fa-heart"></i>
+        </div>
+
+        <div class="cuadros">
+          <h5>Mushu, Mulán</h5>
+          <img
+            class="cuadros-img"
+            src="images/a4.jpg"
+            alt="Graffiti del dragón de Mulán"
+          />
+          <p class="precio">
+            <i class="fa-solid fa-location-dot location"></i>Coeur d'Alene, USA
+          </p>
+          <a
+            class="btn btn-outline-light"
+            target="_blank"
+            href="https://twitter.com/TimMossholder"
+            >Artista</a
+          >
+          <i class="fa-regular fa-heart"></i>
+        </div>
+
+        <div class="cuadros">
+          <h5>Clifford entre Zombies</h5>
+          <img
+            class="cuadros-img"
+            src="images/a5.jpg"
+            alt="Graffiti de Clifford"
+          />
+          <p class="precio">
+            <i class="fa-solid fa-location-dot location"></i>Montreal, Canada
+          </p>
+          <a
+            class="btn btn-outline-light"
+            target="_blank"
+            href="https://www.instagram.com/fleurrustique/"
+            >Artista</a
+          >
+          <i class="fa-regular fa-heart"></i>
+        </div>
+
+        <div class="cuadros">
+          <h5>Gallo Astronauta</h5>
+          <img
+            class="cuadros-img"
+            src="images/a6.jpg"
+            alt="Graffiti de gallo astronauta"
+          />
+          <p class="precio">
+            <i class="fa-solid fa-location-dot location"></i>Desconocido
+          </p>
+          <a
+            class="btn btn-outline-light"
+            target="_blank"
+            href="https://www.instagram.com/Introspectivedsgn/"
+            >Artista</a
+          >
+          <i class="fa-regular fa-heart"></i>
+        </div>
+
+        <div class="cuadros">
+          <h5>Comiendo Ramen</h5>
+          <img
+            class="cuadros-img"
+            src="images/a7.jpg"
+            alt="Graffiti muchacha comiendo ramen"
+          />
+          <p class="precio">
+            <i class="fa-solid fa-location-dot location"></i>Daguestán, Rusia
+          </p>
+          <a
+            class="btn btn-outline-light"
+            target="_blank"
+            href="https://www.instagram.com/cottonbro/"
+            >Artista</a
+          >
+          <i class="fa-regular fa-heart"></i>
+        </div>
+
+        <div class="cuadros">
+          <h5>Ojos en el Otoño</h5>
+          <img
+            class="cuadros-img"
+            src="images/a8.jpg"
+            alt="Graffiti Ojos"
+          />
           <p class="precio">
             <i class="fa-solid fa-location-dot location"></i>Roma, Italia
           </p>
-          <a class="btn" target="_blank" href="https://www.pexels.com/es-es/@danilo-vinci-864361">Artista</a>
+          <a
+            class="btn btn-outline-light"
+            target="_blank"
+            href="https://www.pexels.com/es-es/@danilo-vinci-864361"
+            >Artista</a
+          >
           <i class="fa-regular fa-heart"></i>
-      </div>
+        </div>
 
-      <div class="cuadros">
-        <h4>"Keep your mind strong"</h4>
-        <img class="cuadros-img" src="images/a9.jpg" alt="Imagen Gorila Peronista" />
-        <p class="precio">
-          <i class="fa-solid fa-location-dot location"></i>Detroit, USA
-        </p>
-        <a class="btn" target="_blank" href="https://www.pexels.com/es-es/@travis-rupert-379220">Artista</a>
-        <i class="fa-regular fa-heart"></i>
-    </div>
-    </section>
-    <div id="up" data-aos="fade-up"
-    data-aos-anchor-placement="top-bottom">
-    <a id="up" href="#logo"><i data-aos="fade-up"
-      data-aos-anchor-placement="top-bottom" class="fa-solid fa-arrow-up"></i></a>
-    </div>
+        <div class="cuadros">
+          <h5>"Keep your mind strong"</h5>
+          <img
+            class="cuadros-img"
+            src="images/a9.jpg"
+            alt="Graffiti de muchacha mitad maquina"
+          />
+          <p class="precio">
+            <i class="fa-solid fa-location-dot location"></i>Detroit, USA
+          </p>
+          <a
+            class="btn btn-outline-light"
+            target="_blank"
+            href="https://www.pexels.com/es-es/@travis-rupert-379220"
+            >Artista</a
+          >
+          <i class="fa-regular fa-heart"></i>
+        </div>
+      </section>
+      <div id="up" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <a id="up" href="#logo"
+          ><i
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            class="fa-solid fa-arrow-up"
+          ></i
+        ></a>
+      </div>
     </main>
-    
+
     <footer>
       <p id="foot-text">¡Seguinos en las redes sociales!</p>
       <a href="https://twitter.com/AdrielCamacho" target="_blank"
-        ><i id="twitter" class="fa-brands fa-twitter"></i></a>
+        ><i id="twitter" class="fa-brands fa-twitter"></i
+      ></a>
       <a href="https://www.instagram.com/adrolocura/" target="_blank"
-        ><i id="insta" class="fa-brands fa-instagram"></i></a>
+        ><i id="insta" class="fa-brands fa-instagram"></i
+      ></a>
       <a href="https://github.com/BudHamud" target="_blank"
-        ><i id="github" class="fa-brands fa-github"></i></a>
+        ><i id="github" class="fa-brands fa-github"></i
+      ></a>
     </footer>
     <!-- Mi JS -->
     <script src="scripts/script.js"></script>
+    <!-- Bootstrap -->
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
