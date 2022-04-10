@@ -198,12 +198,12 @@ main h2 {
     border-radius: 20px;
 }
 
-.btn {
+/* .btn {
     background-color: white;
     padding: 0px 15px;
     border-radius: 20px;
     font-size: 16px;
-}
+} */
 
 .location {
     margin-right: 8px;
@@ -215,9 +215,9 @@ main h2 {
     justify-content:center;
 }
 
-.btn:hover, .btn-form:hover {
+/* .btn:hover, .btn-form:hover {
     background-color: lightcoral;
-}
+} */
 
 main i:hover {
     font-size: 25px;
@@ -283,55 +283,8 @@ footer #github:hover {
 
 /* Nosotros */
 
-#contain-us {
-    text-decoration: none;
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-areas: "sec2 sec1" "sec3 sec4";
-    gap: 20px;
-}
-
-#contain-us #sec1 {
-    grid-area: sec1;
-}
-
-#sec1 p, #sec3 p {
-    text-align: justify;
-    margin-bottom: 10px;
-}
-
-#sec2 {
-    grid-area: sec2;
-}
-
-#sec3 {
-    grid-area: sec3;
-    justify-self: center;
-    align-self: center;
-}
-
-#sec3 h3, #sec4 h3 {
-    display: flex;
-    justify-content: center;
-    margin: 10px;
-}
-
-#sec3 img {
+#sec3 img, #sec4 img{
     width: 100%;
-}
-
-#sec4 {
-    grid-area: sec4;
-    align-self: center;
-}
-
-#sec4 img {
-    width: 100%;
-    margin-top: 10px;
-}
-
-#sec4 p {
-    text-align:justify;
 }
 
 /* FAQ */
@@ -388,6 +341,10 @@ footer #github:hover {
     margin-bottom: 20px;
 }
 
+.modal.fade {
+    color: black;
+}
+
 /* Contacto */
 
 #main-contacto h3 {
@@ -399,7 +356,7 @@ footer #github:hover {
     text-align: center;
     display: flex;
     flex-direction: column;
-    width: 45vw;
+
 }
 
 #main-contacto input, #main-contacto textarea {
@@ -448,7 +405,7 @@ footer #github:hover {
 text-align: center;
 display: flex;
 flex-direction: column;
-width: 65%;
+width: 75%;
 }
 
 /* Eventos */
@@ -532,10 +489,10 @@ width: 65%;
 
 /* Responsive */
 
-@media (max-width:1024px) {
-    #main-contacto {
+@media (max-width:992px) {
+    /* #main-contacto {
         width: 50%;
-    }
+    } */
 
     .grid-events {
         grid-template-columns: repeat(2, 1fr);
@@ -549,12 +506,13 @@ width: 65%;
         gap: 10px;
     }
 
-    #contain-us #sec3 {
-        width: 90%;
-    }
     #contain-us #sec3 img {
         width: 50%;
         display: flex;
+        margin: 0 auto;
+    }
+
+    #sec3 {
         margin: 0 auto;
     }
 }
@@ -563,9 +521,9 @@ width: 65%;
 
     /* Contacto */
 
-    #main-contacto {
+    /* #main-contacto {
         width: 60%;
-    }
+    } */
 
     /* Eventos */
     
@@ -597,7 +555,7 @@ width: 65%;
     /* Main */
 
     main {
-        width: 65%;
+        width: 85%;
         font-size: 2.8vw;
     }
 
@@ -739,12 +697,12 @@ width: 65%;
 
     /* Contacto */
 
-    #main-contacto {
+    /* #main-contacto {
         width: 65%;
         display: flex;
-    }
+    } */
 
-    #main-contacto select {
+    /* #main-contacto select {
         width: 80%;
-    }
+    } */
 }
