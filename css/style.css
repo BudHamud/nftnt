@@ -356,6 +356,7 @@ footer #github:hover {
     text-align: center;
     display: flex;
     flex-direction: column;
+    width: 60%;
 
 }
 
@@ -411,7 +412,7 @@ width: 75%;
 /* Eventos */
 
 #main-eventos {
-    width: 65%;
+    width: 85%;
     text-align: center;
 }
 
@@ -422,58 +423,73 @@ width: 75%;
 .grid-events {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "event1 event2 event3" "event4 event5 event6";
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "event1 event2 event3" "event4 event5 event6" "event7 event8 event9";
     justify-items: center;
     gap: 20px;
 }
 
-.grid-events img {
+.grid-events img, .card {
     border-radius: 20px;
 }
 
-.grid-events img:hover {
+.card:hover {
     transform: scale(1.25);
+    z-index: 10;
+}
+
+.card img {
+    filter: brightness(0.5);
+}
+
+.card h5 {
+    font-weight: bolder;
 }
 
 .event-1 {
     grid-area: event1;
-    align-self: center;
 }
 
 .event-2 {
     grid-area: event2;
-    align-self: center;
 }
 
 .event-3 {
     grid-area: event3;
-    align-self: center;
 }
 
 .event-4 {
     grid-area: event4;
-    align-self: center;
 }
 
-.event-1 input, .event-2 input, .event-3 input, .event-4 input {
-    margin-right: 1vw;
+.event-5 {
+    grid-area: event5;
 }
 
-#main-eventos h1 {
-    margin-bottom: 20px;
+.event-6 {
+    grid-area: event6;
 }
 
-#main-eventos input {
-    margin-top: 25px
+.event-7 {
+    grid-area: event7;
 }
 
-#main-eventos p {
-    margin: 5px 0px;
+.event-8 {
+    grid-area: event8;
+}
+
+.event-9 {
+    grid-area: event9;
+}
+
+.card-img-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #noti-btn {
-    margin-left: 10px;
+    margin-top: 20px;
 }
 
 /* Flecha */
@@ -490,15 +506,22 @@ width: 75%;
 /* Responsive */
 
 @media (max-width:992px) {
-    /* #main-contacto {
-        width: 50%;
-    } */
+
+    /* Contacto */
+
+    #main-contacto {
+        width: 60%;
+    }
+
+    /* Eventos */
 
     .grid-events {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-areas: "event1 event2" "event3 event4";
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: "event1 event2" "event3 event4" "event5 event6" "event7 event8" "event9 .";
     }
+
+    /* Nosotros */
 
     #contain-us {
         grid-template-columns: 1fr;
@@ -521,14 +544,18 @@ width: 75%;
 
     /* Contacto */
 
-    /* #main-contacto {
-        width: 60%;
-    } */
+    #main-contacto {
+        width: 70%;
+    }
 
     /* Eventos */
     
     .grid-events {
         font-size: 16px;
+    }
+
+    .card-desc {
+        display: none;
     }
 
     /* FAQ */
@@ -662,14 +689,24 @@ width: 75%;
     }
 }
 
+@media (max-width: 576px) {
+    .card-date {
+        display: none;
+    }
+}
+
 @media (max-width: 425px) {
 
     /* Eventos */
 
     .grid-events {
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        grid-template-areas: "event1" "event2" "event3" "event4";
+        grid-template-rows: repeat(9, 1fr);
+        grid-template-areas: "event1" "event2" "event3" "event4" "event5" "event6" "event7" "event8" "event9";
+    }
+
+    .card-date {
+        display: block;
     }
 }
 
@@ -697,10 +734,10 @@ width: 75%;
 
     /* Contacto */
 
-    /* #main-contacto {
-        width: 65%;
+    #main-contacto {
+        width: 85%;
         display: flex;
-    } */
+    }
 
     /* #main-contacto select {
         width: 80%;
