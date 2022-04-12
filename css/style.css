@@ -16,7 +16,6 @@ html {
 body {
     font-family: 'Prompt';
     background-image:url(../images/pex4.jpg);
-    background-repeat: no-repeat;
     background-size: cover;
     background-color: white;
     font-weight: 600;
@@ -283,8 +282,55 @@ footer #github:hover {
 
 /* Nosotros */
 
-#sec3 img, #sec4 img{
+#contain-us {
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+    grid-template-areas: "sec2 sec1" "sec3 sec4";
+    gap: 20px;
+}
+
+#contain-us #sec1 {
+    grid-area: sec1;
+}
+
+#sec1 p, #sec3 p {
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+#sec2 {
+    grid-area: sec2;
+}
+
+#sec3 {
+    grid-area: sec3;
+    justify-self: center;
+    align-self: center;
+}
+
+#sec3 h3, #sec4 h3 {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+#sec3 img {
     width: 100%;
+}
+
+#sec4 {
+    grid-area: sec4;
+    align-self: center;
+}
+
+#sec4 img {
+    width: 100%;
+    margin-top: 10px;
+}
+
+#sec4 p {
+    text-align:justify;
 }
 
 /* FAQ */
@@ -646,26 +692,22 @@ width: 75%;
         grid-template-areas: "sec5 sec6";
         gap: 20px;
     }
-}
-
-@media (max-width:600px) {
-
     #main-faq #sec5, #sec6 {
         width: 100%;
     }
-
+    
     #main-faq article {
         flex-direction: column;
     }
-
+    
     #main-faq summary, #main-faq p {
         font-size: 4vw;
     }
-
+    
     #main-faq p {
         font-size: 3.5vw;
     }
-
+    
     #main-faq details {
         margin-bottom: 5vw;
     }
@@ -674,20 +716,22 @@ width: 75%;
         grid-template-columns: repeat(1, 1fr);
         grid-template-areas: "sec5" "sec6";
     }
-
+    
     /* Cuadros/Obras */
-
+    
     .art {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, 1fr);
         display: grid;
         gap: 30px;
     }
-
+    
     .cuadros-img {
         width: 100%;
     }
 }
+
+
 
 @media (max-width: 576px) {
     .card-date {
