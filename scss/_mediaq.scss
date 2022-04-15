@@ -1,0 +1,175 @@
+/* Responsive */
+
+@media (max-width:992px) {
+
+    /* Contacto */
+
+    #main-contacto {
+        width: 60%;
+    }
+
+    /* Eventos */
+
+    #main-eventos {
+        .grid-events {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            grid-template-areas: "event1 event2" "event3 event4" "event5 event6" "event7 event8" "event9 .";
+        }
+    }
+
+    /* Nosotros */
+
+    #contain-us {
+        grid-template-columns: 1fr;
+        grid-template-areas: "sec2" "sec1" "sec3" "sec4";
+        gap: 10px;
+        #sec3 {
+            margin: 0 auto;
+            img {
+                width: 50%;
+                display: flex;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+
+    /* Contacto */
+
+    #main-contacto {
+        width: 70%;
+    }
+
+    /* Eventos */
+    
+    #main-eventos {
+        .grid-events {
+            font-size: 16px;
+            .card {
+                .card-desc {
+                    display: none;
+                }
+            }
+        }
+        
+    }
+
+    /* Footer */
+
+    footer {
+        text-align: center;
+    }
+}
+
+@media (max-width:600px) {
+    
+    /* Header */
+
+    nav {
+        padding-bottom: 10px;
+    }
+
+    /* Main */
+
+    main {
+        width: 85%;
+        font-size: 2.8vw;
+        h2 {
+            font-size: 6vw;
+        }
+        .art {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            .cuadros {
+                .cuadros-img {
+                    width: 100%;
+                }
+            }
+        }     
+    }
+
+    /* Mis Aportes */
+
+    #main-aportes {
+    display: flex;
+    padding: 50px 5px;
+    width: 90%;
+    }
+
+    /* FAQ */
+
+    #main-faq {
+        padding: 20px;
+    }
+
+    /* Eventos */
+
+    #main-eventos {
+        .grid-events {
+            font-size: 16px;
+        }
+    }
+    
+}
+
+@media (max-width: 576px) {
+
+    #main-eventos {
+        .grid-events {
+            .card {
+                .card-date {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+
+    /* Eventos */
+
+    #main-eventos {
+        .grid-events {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(9, 1fr);
+            grid-template-areas: "event1" "event2" "event3" "event4" "event5" "event6" "event7" "event8" "event9";
+            .card {
+                .card-date {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    main {
+        font-size: 4.5vw;
+    }
+}
+
+@media (max-width: 320px) {
+
+    /* Main */
+
+    main {
+        width: 95%;
+        .carousel.slide {
+            width: 100%;
+        }
+        h2 {
+            font-size: 7vw;
+        }
+    }
+
+    /* Contacto */
+
+    #main-contacto {
+        width: 85%;
+        display: flex;
+    }
+}

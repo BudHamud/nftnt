@@ -1,0 +1,64 @@
+/* Eventos */
+
+#main-eventos {
+    width: 85%;
+    text-align: center;
+    #noti-btn {
+        margin-top: 20px;
+    }
+    .grid-events {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: "event1 event2 event3" "event4 event5 event6" "event7 event8 event9";
+        justify-items: center;
+        gap: 20px;
+        .event-1 {
+            grid-area: event1;
+        }
+        .event-2 {
+            grid-area: event2;
+        }
+        .event-3 {
+            grid-area: event3;
+        }
+        .event-4 {
+            grid-area: event4;
+        }
+        .event-5 {
+            grid-area: event5;
+        }
+        .event-6 {
+            grid-area: event6;
+        }
+        .event-7 {
+            grid-area: event7;
+        }
+        .event-8 {
+            grid-area: event8;
+        }
+        .event-9 {
+            grid-area: event9;
+        }
+        .card {
+            border-radius: 20px;
+            &:hover {
+                transform: scale(1.25);
+                z-index: 10;
+            }
+            img {
+                width: 100%;
+                border-radius: 20px;
+                filter: brightness(0.5);
+            }
+            h5 {
+                font-weight: bolder;
+            }
+            .card-img-overlay {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+        }
+    }
+}
