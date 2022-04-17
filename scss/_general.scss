@@ -2,9 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100&display=swap');
 
-* {
+*,
+::before,
+::after {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -16,7 +19,6 @@ html {
 body {
     font-family: 'Prompt';
     background-image:url(../images/pex4.jpg);
-    background-size: cover;
     background-color: white;
     font-weight: 600;
 }

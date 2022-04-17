@@ -8,47 +8,45 @@
     #container-faq {
         #sec5 {
             width: 100%;
-        }
-        #sec5 {
-            h3 {
-                font-size: 30px;
-                animation-name: no;
-                animation-duration: 3s;
-                animation-iteration-count: infinite;
-            }
-            @keyframes no {
-                50% {
-                    color: red;
-                }
-            }
-            details {
-                margin-bottom: 2vw;
-
-            }
-            summary {
-                cursor: pointer;
-                padding: 5px;
-                margin-bottom: 20px;
-                border: solid 2px;
-                background-color: $terColor;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                i {
-                    margin-right: 10px;
-                    &:hover {
-                        animation-name: mais;
-                        animation-duration: 1s;
-                    }
-                    @keyframes mais {
-                        0%{transform: rotate(0deg)};
-                        100% {transform: rotate(180deg)};
-                    }
-                }
-            }
             .modal.fade {
                 color: black;
             }
         }
+    }
+}
+
+// details y summary están a parte porque sino la animación no funciona
+
+details {
+    margin-bottom: 2vw;
+    border: solid 2px;
+    background-color: $terColor;
+    padding: 5px;
+    p {
+        padding: 8px 8px 0 8px;
+    }
+  }
+  summary {
+    display: block;
+    position: relative;
+    margin-bottom: 0;
+    padding: 8px;    
+    &::before,
+    &::after {
+      width: .75em;
+      height: 2px;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      content: '';
+      background-color: white;
+      transform: translateY(-50%);
+      transition: transform .2s ease-in-out;
+    }
+    &::after {
+      transform: translateY(-50%) rotate(90deg);
+      [open] & {
+        transform: translateY(-50%) rotate(180deg);
+      }
     }
 }

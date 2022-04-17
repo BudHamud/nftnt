@@ -1,22 +1,30 @@
-document.querySelector(".menu-btn").addEventListener("click", () => {
-    document.querySelector(".h").classList.toggle("show");
-});
+// // FAQ Collapse
 
-// function checkAge(age) {
-//     if (age >= 18) {
-//         return true;
-//     } else {
-//         return confirm("¿Tus viejos saben de esto?")
-//     }
+// var collapse = document.getElementsByClassName("details");
+// var i;
+
+// for (i = 0; i < collapse.length; i++) {
+//     collapse[i].addEventListener("click", function() {
+//         this.classList.toggle("active");
+//         var content = this.nextElementSibling;
+//         if (content.style.display === "block") {
+//             content.style.display = "none";
+//         } else {
+//             content.style.display = "block";
+//         }
+//     })
 // }
 
-// let age = prompt('Qué edad tenés?');
+// var plus = document.getElementsByClassName("fa-plus");
 
-// if ( checkAge(age) ) {
-//     alert('Adelante maestro');
-//     } else {
-//     alert("No te puedo echar, pero si te vas me hacés un favor");
+// for (i = 0; i < plus.length; i++) {
+//     plus[i].addEventListener("click", function() {
+//         this.classList.toggle("minus", "plushu");
+//         var content = this.nextElementSibling;
+//         if (content.style.display === "block") {
+//             content.style.display = "none";
+//         } else {
+//             content.style.display = "block";
+//         }
+//     })
 // }
-
-// alert(check(age));
-

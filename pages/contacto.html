@@ -56,31 +56,30 @@
     <main id="main-contacto" class="mains bg-dark">
       
       <form>
-        <div class="row g-3">
         
             <h3>Contáctanos!</h3>
-            <div class="col-md-6">
-            <label for="name" class="form-label">Nombre/s</label>
-            <input type="text" class="form-control" placeholder="Escriba su nombre..."  name="name" id="name" required
-          />
-        </div>
-        <div class="col-md-6">
-          <label for="name" class="form-label">Apellido/s:</label>
-          <input type="text" class="form-control" placeholder="Escriba su apellido..."  name="name" id="name" required
-        />
-      </div>
+
+            <div class="names">
+              <label for="name" class="form-label">Nombre/s</label>
+              <input type="text" class="form-control" placeholder="Escriba su nombre..."  name="name" id="name" required/>
+
+
+              <label for="sec-name" class="form-label">Apellido/s:</label>
+              <input type="text" class="form-control" placeholder="Escriba su apellido..."  name="name" id="sec-name" required/>
+            </div>
+
           
-      <div class="col-md-12">
+
             <label for="date" class="form-label">Fecha de Nacimiento:</label>
             <input class="form-control" type="date" name="date" id="date" required>
-      </div>
+
           
-      <div class="col-md-12">
+
             <label for="age" class="form-label">Edad:</label>
             <input class="form-control" type="number" name="age" id="age" placeholder="Escriba su edad..." required />
-      </div>
 
-      <div class="col-md-12">
+
+
             <label for="genre" class="form-label">Género:</label>
             <select class="form-select" name="genre" id="genre" required>
               <option id="poke" disabled selected>Por favor, indique su género</option>
@@ -88,24 +87,24 @@
               <option value="fem">Femenino</option>
               <option value="oth">Otro</option>
             </select>
-      </div>
+
           
-      <div class="col-md-12">
+
           <label for="email" class="form-label">Email:</label>
             <input class="col-12 form-control" type="email" id="email" placeholder="Escriba su email..."  required/>
-      </div>
 
-      <div class="col-md-12">
+
+
           <label for="comment" class="form-label">Comentarios:</label>
             <textarea class="form-control" name="comment" id="comment" cols="30" rows="10">
 Agradecemos cualquier aporte ^^.</textarea
             >
-      </div>
+
             
 
-      <div class="col-12">
+
         <button type="submit" class="btn btn-outline-light">Enviar</button>
-      </div>
+
         
       </form>
 
