@@ -1,5 +1,56 @@
+// Variables
+
 $mainColor: gray;
 $secColor: #2C394B; 
 $terColor: #383838;
 
 $w-100: 100%;
+$i: 1;
+
+$festividad: "Butrap";
+
+// Bucles (while true)
+
+@for $i from 1 through 10 {
+    .col-#{$i}{
+        width: 10% *  $i;
+    }
+}
+
+// Each
+
+@each $color in red, yellow, lightblue {
+    .#{$color} {
+        color:#{$color};
+    }
+}
+
+// Maps (object)
+
+$redes: (
+    twitter: lightblue,
+    facebook: blue,
+    send-mail: #C25E30
+);
+
+@each $red, $color in $redes {
+    .btn--#{$red} {
+        background-color: $color;
+    }
+}
+
+// Map-Get
+
+$estilos: (
+    color: #3673D9,
+    centro: center,
+    tFuente: 35px,
+    oneRem: 1rem
+);
+
+.cajaMolesta {
+    background-color: map-get($estilos, color);
+    text-align: map-get($estilos, centro);
+    padding: map-get($estilos, oneRem );
+    font-size: map-get($estilos, tFuente);
+}
