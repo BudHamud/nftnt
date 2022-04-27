@@ -9,6 +9,15 @@ $i: 1;
 
 $festividad: "Butrap";
 
+@mixin instaAnim {
+    @keyframes insta {
+        0% {color: #f09433;}
+        33% {color: orange;}
+        66% {color: red;}
+        100% {color: purple ;}
+    }
+}
+
 // Bucles (while true)
 
 @for $i from 1 through 10 {
@@ -29,7 +38,7 @@ $festividad: "Butrap";
 
 $redes: (
     twitter: lightblue,
-    facebook: blue,
+    github: gray,
     send-mail: #C25E30
 );
 
@@ -44,7 +53,7 @@ $redes: (
 $estilos: (
     color: #3673D9,
     centro: center,
-    tFuente: 35px,
+    tFuente: 25px,
     oneRem: 1rem
 );
 
@@ -52,5 +61,5 @@ $estilos: (
     background-color: map-get($estilos, color);
     text-align: map-get($estilos, centro);
     padding: map-get($estilos, oneRem );
-    font-size: map-get($estilos, tFuente);
+    font-size: map-get($map:$estilos , $key:tFuente );
 }

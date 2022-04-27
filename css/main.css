@@ -1,6 +1,60 @@
 @charset "UTF-8";
-/* General */
 @import url("https://fonts.googleapis.com/css2?family=Prompt:wght@100&display=swap");
+.col-1 {
+  width: 10%; }
+
+.col-2 {
+  width: 20%; }
+
+.col-3 {
+  width: 30%; }
+
+.col-4 {
+  width: 40%; }
+
+.col-5 {
+  width: 50%; }
+
+.col-6 {
+  width: 60%; }
+
+.col-7 {
+  width: 70%; }
+
+.col-8 {
+  width: 80%; }
+
+.col-9 {
+  width: 90%; }
+
+.col-10 {
+  width: 100%; }
+
+.red {
+  color: red; }
+
+.yellow {
+  color: yellow; }
+
+.lightblue {
+  color: lightblue; }
+
+.btn--twitter {
+  background-color: lightblue; }
+
+.btn--github {
+  background-color: gray; }
+
+.btn--send-mail {
+  background-color: #C25E30; }
+
+.cajaMolesta {
+  background-color: #3673D9;
+  text-align: center;
+  padding: 1rem;
+  font-size: 25px; }
+
+/* General */
 *,
 ::before,
 ::after {
@@ -143,60 +197,6 @@ footer {
   display: flex;
   flex-direction: column;
   width: 75%; }
-
-.col-1 {
-  width: 10%; }
-
-.col-2 {
-  width: 20%; }
-
-.col-3 {
-  width: 30%; }
-
-.col-4 {
-  width: 40%; }
-
-.col-5 {
-  width: 50%; }
-
-.col-6 {
-  width: 60%; }
-
-.col-7 {
-  width: 70%; }
-
-.col-8 {
-  width: 80%; }
-
-.col-9 {
-  width: 90%; }
-
-.col-10 {
-  width: 100%; }
-
-.red {
-  color: red; }
-
-.yellow {
-  color: yellow; }
-
-.lightblue {
-  color: lightblue; }
-
-.btn--twitter {
-  background-color: lightblue; }
-
-.btn--facebook {
-  background-color: blue; }
-
-.btn--send-mail {
-  background-color: #C25E30; }
-
-.cajaMolesta {
-  background-color: #3673D9;
-  text-align: center;
-  padding: 1rem;
-  font-size: 35px; }
 
 /* Contacto */
 #main-contacto {

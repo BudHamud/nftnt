@@ -129,15 +129,10 @@ footer {
         animation-name: insta;
         animation-duration: 2s;
         animation-iteration-count: infinite;
-    }
-    @keyframes insta {
-        0% {color: #f09433;}
-        33% {color: orange;}
-        66% {color: red;}
-        100% {color: purple ;}
+        @include instaAnim
     }
     #twitter:hover {
-        color: lightblue;
+        color: map-get($map:$redes, $key:twitter );
         animation-name: twitter;
         animation-duration: 2s;
     }
@@ -145,7 +140,7 @@ footer {
         50% {transform: rotate(-40deg); }
     }
     #github:hover {
-        color: gray;
+        color: map-get($map:$redes, $key:github );
         animation-name: github;
         animation-duration: 2s;
     }
