@@ -43,7 +43,7 @@ main {
   width: 80%;
   margin: 0 auto;
   justify-self: center;
-  margin-bottom: 150px;
+  margin-bottom: 190px;
   color: white;
   position: relative;
   padding: 50px;
@@ -56,10 +56,14 @@ main {
     border-radius: 20px; }
     main .carousel.slide img {
       border-radius: 20px; }
-  main h2 {
+    main .carousel.slide h5 {
+      font-weight: 600;
+      letter-spacing: 2px; }
+    main .carousel.slide p {
+      opacity: 0.9; }
+  main h1 {
     text-align: center;
-    margin-bottom: 20px;
-    font-size: 32px; }
+    margin-bottom: 30px; }
   main .art {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
@@ -73,6 +77,7 @@ main {
       background-color: #2C394B;
       border-radius: 20px; }
       main .art .cuadros h5 {
+        font-weight: 600;
         margin-bottom: 10px; }
       main .art .cuadros .cuadros-img {
         width: 300px;
@@ -82,27 +87,39 @@ main {
         main .art .cuadros .location:hover {
           font-size: 25px;
           color: red; }
+      main .art .cuadros p {
+        font-weight: 600;
+        opacity: 0.8; }
+      main .art .cuadros .btn {
+        font-weight: 600; }
 
 /* Footer */
 footer {
   padding-top: 20px;
-  text-align: right;
   position: absolute;
   bottom: 0;
   width: 100%;
   padding-bottom: 10px;
-  color: white; }
-  footer #foot-text {
-    margin-right: 20px; }
-  footer i {
-    font-size: 30px;
-    margin-right: 1.5vw;
-    padding: 10px;
-    color: white; }
-  footer #insta:hover {
-    animation-name: insta;
-    animation-duration: 2s;
-    animation-iteration-count: infinite; }
+  color: white;
+  display: flex;
+  justify-content: space-between; }
+  footer .redes {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 0; }
+    footer .redes .icons {
+      display: flex;
+      justify-content: space-evenly;
+      width: 60%; }
+      footer .redes .icons i {
+        font-size: 30px;
+        color: white; }
+      footer .redes .icons #insta:hover {
+        animation-name: insta;
+        animation-duration: 2s;
+        animation-iteration-count: infinite; }
 
 @keyframes insta {
   0% {
@@ -113,13 +130,40 @@ footer {
     color: red; }
   100% {
     color: purple; } }
-  footer #twitter:hover, footer #github:hover {
-    color: lightblue;
-    transition: 1s;
-    transform: rotate(-40deg); }
-  footer #github:hover {
-    color: gray;
-    opacity: 0.8; }
+      footer .redes .icons #twitter:hover, footer .redes .icons #github:hover {
+        color: lightblue;
+        transition: 1s;
+        transform: rotate(-40deg); }
+      footer .redes .icons #github:hover {
+        color: gray;
+        opacity: 0.8; }
+  footer .part1 {
+    width: 30%;
+    display: flex;
+    margin: auto 0;
+    justify-content: center; }
+    footer .part1 img {
+      width: 50px;
+      height: 50px; }
+    footer .part1 h5 {
+      margin-left: 10px;
+      font-weight: 600; }
+    footer .part1 .derechos {
+      text-align: left; }
+  footer .part2 {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    footer .part2 ul {
+      list-style: none;
+      text-align: left; }
+      footer .part2 ul li a {
+        color: white;
+        opacity: 0.8; }
+        footer .part2 ul li a:hover {
+          color: lightblue;
+          opacity: 1; }
 
 /* Flecha */
 #up i {
@@ -141,20 +185,21 @@ footer {
   display: flex;
   flex-direction: column;
   width: 60%; }
-  #main-contacto h3 {
-    margin-bottom: 50px;
-    font-size: 23px; }
+  #main-contacto h1 {
+    margin-bottom: 50px; }
   #main-contacto textarea, #main-contacto input, #main-contacto select {
     margin-bottom: 30px;
     background-color: #2C394B;
     color: white;
-    border: solid 1px white; }
+    border: solid 1px white;
+    color-scheme: dark; }
     #main-contacto textarea::placeholder, #main-contacto input::placeholder, #main-contacto select::placeholder {
       color: white;
       opacity: 0.7; }
   #main-contacto .names {
-    display: flex;
-    flex-direction: column; }
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 7px; }
 
 /* Nosotros */
 #contain-us {
@@ -285,7 +330,7 @@ summary {
 @media (max-width: 992px) {
   /* Contacto */
   #main-contacto {
-    width: 60%; }
+    width: 70%; }
   /* Eventos */
   #main-eventos .grid-events {
     grid-template-columns: repeat(2, 1fr);
@@ -306,15 +351,26 @@ summary {
 @media (max-width: 768px) {
   /* Contacto */
   #main-contacto {
-    width: 70%; }
+    width: 75%; }
+    #main-contacto .names {
+      grid-template-columns: 1fr; }
   /* Eventos */
   #main-eventos .grid-events {
     font-size: 16px; }
     #main-eventos .grid-events .card .card-desc {
       display: none; }
+  /* Main*/
+  main {
+    margin-bottom: 330px; }
   /* Footer */
   footer {
-    text-align: center; } }
+    text-align: center;
+    flex-direction: column;
+    align-items: center; }
+    footer .redes, footer .part1, footer .part2 {
+      width: 100%; }
+      footer .redes .icons, footer .part1 .icons, footer .part2 .icons {
+        width: 50%; } }
 
 @media (max-width: 600px) {
   /* Header */

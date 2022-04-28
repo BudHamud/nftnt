@@ -56,7 +56,7 @@ main {
     width: 80%;
     margin: 0 auto;
     justify-self: center;
-    margin-bottom: 150px;
+    margin-bottom: 190px;
     color: white;
     position: relative;
     padding: 50px;
@@ -70,11 +70,17 @@ main {
         img {
             border-radius: 20px;
         }
+        h5 {
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+        p {
+            opacity: 0.9;
+        }
     }
-    h2 {
+    h1 {
         text-align: center;
-        margin-bottom: 20px;
-        font-size: 32px;
+        margin-bottom: 30px;
     }
     .art {
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -89,6 +95,7 @@ main {
             background-color: $secColor;
             border-radius: 20px;
             h5 {
+                font-weight: 600;
                 margin-bottom: 10px;
             }
             .cuadros-img {
@@ -102,6 +109,13 @@ main {
                     color: red;
                 }
             }
+            p {
+                font-weight: 600;
+                opacity: 0.8;
+            }
+            .btn {
+                font-weight: 600;
+            }
         }
     }
 }
@@ -110,36 +124,81 @@ main {
 
 footer {
     padding-top: 20px;
-    text-align: right;
     position: absolute;
     bottom: 0;
     width: 100%;
     padding-bottom: 10px;
     color: white;
-    #foot-text {
-        margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    .redes {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto 0;
+        .icons {
+            display: flex;
+            justify-content: space-evenly;
+            width: 60%;
+            i {
+                font-size: 30px;
+                color: white;
+            }
+            #insta:hover {
+                animation-name: insta;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                @include instaAnim
+            }
+            #twitter:hover {
+                color: map-get($map:$redes, $key:twitter );
+                transition: 1s;
+                transform: rotate(-40deg);
+            }
+            #github:hover {
+                color: map-get($map:$redes, $key:github );
+                @extend #twitter:hover;
+                opacity: 0.8;
+            }
+        }
     }
-    i {
-        font-size: 30px;
-        margin-right: 1.5vw;
-        padding: 10px;
-        color: white;
+    .part1 {
+        width: 30%;
+        display: flex;
+        margin: auto 0;
+        justify-content: center;
+        img {
+            width: 50px;
+            height: 50px;
+        }
+        h5 {
+            margin-left: 10px;
+            font-weight: 600;
+        }
+        .derechos {
+            text-align: left;
+        }
     }
-    #insta:hover {
-        animation-name: insta;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
-        @include instaAnim
-    }
-    #twitter:hover {
-        color: map-get($map:$redes, $key:twitter );
-        transition: 1s;
-        transform: rotate(-40deg);
-    }
-    #github:hover {
-        color: map-get($map:$redes, $key:github );
-        @extend #twitter:hover;
-        opacity: 0.8;
+    .part2 {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        ul {
+            list-style: none;
+            text-align: left;
+            li {
+                a {
+                    color: white;
+                    opacity: 0.8;
+                    &:hover {
+                        color: lightblue;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
     }
 }
 
