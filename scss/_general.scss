@@ -133,19 +133,13 @@ footer {
     }
     #twitter:hover {
         color: map-get($map:$redes, $key:twitter );
-        animation-name: twitter;
-        animation-duration: 2s;
-    }
-    @keyframes twitter {
-        50% {transform: rotate(-40deg); }
+        transition: 1s;
+        transform: rotate(-40deg);
     }
     #github:hover {
         color: map-get($map:$redes, $key:github );
-        animation-name: github;
-        animation-duration: 2s;
-    }
-    @keyframes github {
-        50% {transform: rotate(60deg);}
+        @extend #twitter:hover;
+        opacity: 0.8;
     }
 }
 

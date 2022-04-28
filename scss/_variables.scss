@@ -9,6 +9,8 @@ $i: 1;
 
 $festividad: "Butrap";
 
+// Mixin
+
 @mixin instaAnim {
     @keyframes insta {
         0% {color: #f09433;}
@@ -18,48 +20,10 @@ $festividad: "Butrap";
     }
 }
 
-// Bucles (while true)
-
-@for $i from 1 through 10 {
-    .col-#{$i}{
-        width: 10% *  $i;
-    }
-}
-
-// Each
-
-@each $color in red, yellow, lightblue {
-    .#{$color} {
-        color:#{$color};
-    }
-}
-
-// Maps (object)
+// Map
 
 $redes: (
     twitter: lightblue,
     github: gray,
     send-mail: #C25E30
 );
-
-@each $red, $color in $redes {
-    .btn--#{$red} {
-        background-color: $color;
-    }
-}
-
-// Map-Get
-
-$estilos: (
-    color: #3673D9,
-    centro: center,
-    tFuente: 25px,
-    oneRem: 1rem
-);
-
-.cajaMolesta {
-    background-color: map-get($estilos, color);
-    text-align: map-get($estilos, centro);
-    padding: map-get($estilos, oneRem );
-    font-size: map-get($map:$estilos , $key:tFuente );
-}
