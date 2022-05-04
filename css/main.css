@@ -295,6 +295,7 @@ summary {
   #main-eventos #noti-btn {
     margin-top: 20px; }
   #main-eventos .grid-events {
+    margin-bottom: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -334,11 +335,22 @@ summary {
         display: flex;
         flex-direction: column;
         justify-content: space-between; }
-  #main-eventos .info-1 {
-    display: flex;
-    justify-content: space-around; }
-    #main-eventos .info-1 img {
-      width: 350px; }
+  #main-eventos .info {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    width: 80%;
+    margin: 0 auto; }
+    #main-eventos .info .info-card {
+      background-color: #2C394B;
+      display: flex;
+      justify-content: space-around;
+      border-radius: 20px; }
+      #main-eventos .info .info-card img {
+        width: 450px;
+        border-radius: 20px; }
+      #main-eventos .info .info-card h3 {
+        margin: 0 auto; }
 
 /* Responsive */
 @media (max-width: 992px) {
@@ -350,6 +362,10 @@ summary {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
     grid-template-areas: "event1 event2" "event3 event4" "event5 event6" "event7 event8" "event9 ."; }
+  #main-eventos .info {
+    width: 100%; }
+    #main-eventos .info .info-card img {
+      width: 50%; }
   /* Nosotros */
   #contain-us {
     grid-template-columns: 1fr;
@@ -414,7 +430,15 @@ summary {
     padding: 20px; }
   /* Eventos */
   #main-eventos .grid-events {
-    font-size: 16px; } }
+    font-size: 16px; }
+  #main-eventos .info {
+    width: 100%; }
+    #main-eventos .info .info-card {
+      flex-direction: column; }
+      #main-eventos .info .info-card img {
+        width: 100%; }
+    #main-eventos .info #info1, #main-eventos .info #info3, #main-eventos .info #info5, #main-eventos .info #info7, #main-eventos .info #info9 {
+      flex-direction: column-reverse; } }
 
 @media (max-width: 576px) {
   #main-eventos .grid-events .card .card-date {

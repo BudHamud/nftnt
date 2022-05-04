@@ -16,6 +16,14 @@
             grid-template-rows: repeat(5, 1fr);
             grid-template-areas: "event1 event2" "event3 event4" "event5 event6" "event7 event8" "event9 .";
         }
+        .info {
+            width: 100%;
+            .info-card {
+                img {
+                    width: 50%;
+                }
+            }
+        }
     }
 
     /* Nosotros */
@@ -131,6 +139,21 @@
     #main-eventos {
         .grid-events {
             font-size: 16px;
+        }
+    }
+
+    #main-eventos {
+        .info {
+            width: 100%;
+            .info-card {
+                flex-direction: column;
+                img {
+                    width: 100%;
+                }
+            }
+            #info1, #info3, #info5, #info7, #info9 {
+                flex-direction: column-reverse;
+            }
         }
     }
     
