@@ -6,6 +6,10 @@
     grid-template-columns: 2fr 6fr;
     grid-template-areas: "sec2 sec1" "sec3 sec4";
     gap: 20px;
+    span {
+        font-weight: 900;
+        color: #ECB365;
+    }
     #sec1 {
         grid-area: sec1;
         p {
@@ -39,6 +43,7 @@
         img {
             width: 100%;
             margin-top: 10px;
+            border-radius: 20px;
         }
         p {
             text-align:justify;

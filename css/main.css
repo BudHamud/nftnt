@@ -87,6 +87,8 @@ main {
         main .art .cuadros .location:hover {
           font-size: 25px;
           color: red; }
+      main .art .cuadros a {
+        color: white; }
       main .art .cuadros p {
         font-weight: 600;
         opacity: 0.8; }
@@ -208,6 +210,9 @@ footer {
   grid-template-columns: 2fr 6fr;
   grid-template-areas: "sec2 sec1" "sec3 sec4";
   gap: 20px; }
+  #contain-us span {
+    font-weight: 900;
+    color: #ECB365; }
   #contain-us #sec1 {
     grid-area: sec1; }
     #contain-us #sec1 p {
@@ -233,7 +238,8 @@ footer {
     align-self: center; }
     #contain-us #sec4 img {
       width: 100%;
-      margin-top: 10px; }
+      margin-top: 10px;
+      border-radius: 20px; }
     #contain-us #sec4 p {
       text-align: justify; }
     #contain-us #sec4 h3 {
@@ -278,6 +284,9 @@ summary {
     transform: translateY(-50%) rotate(90deg); }
     [open] summary::after {
       transform: translateY(-50%) rotate(180deg); }
+  summary span {
+    font-weight: 900;
+    color: #ECB365; }
 
 /* Eventos */
 #main-eventos {
@@ -325,6 +334,11 @@ summary {
         display: flex;
         flex-direction: column;
         justify-content: space-between; }
+  #main-eventos .info-1 {
+    display: flex;
+    justify-content: space-around; }
+    #main-eventos .info-1 img {
+      width: 350px; }
 
 /* Responsive */
 @media (max-width: 992px) {
@@ -361,7 +375,10 @@ summary {
       display: none; }
   /* Main*/
   main {
-    margin-bottom: 330px; }
+    margin-bottom: 330px;
+    padding: 15px; }
+    main .carousel.slide {
+      width: 100%; }
   /* Footer */
   footer {
     text-align: center;
@@ -401,10 +418,18 @@ summary {
 
 @media (max-width: 576px) {
   #main-eventos .grid-events .card .card-date {
-    display: none; } }
+    display: none; }
+  main .carousel.slide {
+    width: 100%;
+    height: 400px; }
+    main .carousel.slide img {
+      height: 400px;
+      object-fit: cover; } }
 
 @media (max-width: 425px) {
   /* Eventos */
+  main {
+    font-size: 4vw; }
   #main-eventos .grid-events {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(9, 1fr);
@@ -414,14 +439,12 @@ summary {
 
 @media (max-width: 375px) {
   main {
-    font-size: 4.5vw; } }
+    font-size: 5vw; } }
 
 @media (max-width: 320px) {
   /* Main */
   main {
     width: 95%; }
-    main .carousel.slide {
-      width: 100%; }
     main h2 {
       font-size: 7vw; }
   /* Contacto */
