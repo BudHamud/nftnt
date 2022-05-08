@@ -10,7 +10,6 @@
 
 html {
   min-height: 100%;
-  position: relative;
   scroll-behavior: smooth; }
 
 body {
@@ -43,10 +42,10 @@ main {
   width: 80%;
   margin: 0 auto;
   justify-self: center;
-  margin-bottom: 190px;
+  margin-bottom: 50px;
   color: white;
   position: relative;
-  padding: 50px;
+  padding: 20px;
   border-radius: 50px; }
   main .carousel.slide {
     width: 70%;
@@ -83,12 +82,11 @@ main {
         width: 300px;
         border-radius: 10px; }
       main .art .cuadros .location {
-        margin-right: 8px; }
+        margin-right: 8px;
+        color: white; }
         main .art .cuadros .location:hover {
           font-size: 25px;
           color: red; }
-      main .art .cuadros a {
-        color: white; }
       main .art .cuadros p {
         font-weight: 600;
         opacity: 0.8; }
@@ -98,8 +96,6 @@ main {
 /* Footer */
 footer {
   padding-top: 20px;
-  position: absolute;
-  bottom: 0;
   width: 100%;
   padding-bottom: 10px;
   color: white;
@@ -164,15 +160,20 @@ footer {
         color: white;
         opacity: 0.8; }
         footer .part2 ul li a:hover {
-          color: lightblue;
+          color: #F68989;
           opacity: 1; }
 
 /* Flecha */
 #up i {
+  padding: 20px;
+  border-radius: 50px;
+  background-color: gray;
   color: white;
-  font-size: 22px; }
+  font-size: 22px;
+  position: fixed; }
   #up i:hover {
-    color: gray; }
+    transition: 1s;
+    transform: scale(1.15); }
 
 /* Todas las Páginas */
 #main-aportes, #main-fav {
@@ -212,7 +213,7 @@ footer {
   gap: 20px; }
   #contain-us span {
     font-weight: 900;
-    color: #ECB365; }
+    color: #F68989; }
   #contain-us #sec1 {
     grid-area: sec1; }
     #contain-us #sec1 p {
@@ -286,14 +287,16 @@ summary {
       transform: translateY(-50%) rotate(180deg); }
   summary span {
     font-weight: 900;
-    color: #ECB365; }
+    color: #F68989; }
 
 /* Eventos */
 #main-eventos {
-  width: 85%;
-  text-align: center; }
-  #main-eventos #noti-btn {
-    margin-top: 20px; }
+  width: 85%; }
+  #main-eventos .div-btn {
+    display: flex;
+    justify-content: center; }
+    #main-eventos .div-btn #noti-btn {
+      margin-top: 20px; }
   #main-eventos .grid-events {
     margin-bottom: 50px;
     display: grid;
@@ -391,7 +394,6 @@ summary {
       display: none; }
   /* Main*/
   main {
-    margin-bottom: 330px;
     padding: 15px; }
     main .carousel.slide {
       width: 100%; }
@@ -415,11 +417,6 @@ summary {
     font-size: 2.8vw; }
     main h2 {
       font-size: 6vw; }
-    main .art {
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: repeat(1, 1fr); }
-      main .art .cuadros .cuadros-img {
-        width: 100%; }
   /* Mis Aportes */
   #main-aportes {
     display: flex;
@@ -443,17 +440,27 @@ summary {
 @media (max-width: 576px) {
   #main-eventos .grid-events .card .card-date {
     display: none; }
-  main .carousel.slide {
-    width: 100%;
-    height: 400px; }
-    main .carousel.slide img {
-      height: 400px;
-      object-fit: cover; } }
+  main {
+    font-size: 3.5vw; }
+    main .carousel.slide {
+      width: 100%;
+      height: 400px; }
+      main .carousel.slide img {
+        height: 400px;
+        object-fit: cover; }
+    main .art {
+      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+      grid-template-rows: repeat(auto-fit, minmax(310px, 1fr)); } }
 
 @media (max-width: 425px) {
   /* Eventos */
   main {
     font-size: 4vw; }
+    main .art {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(1, 1fr); }
+      main .art .cuadros .cuadros-img {
+        width: 100%; }
   #main-eventos .grid-events {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(9, 1fr);

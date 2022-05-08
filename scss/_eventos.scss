@@ -2,9 +2,12 @@
 
 #main-eventos {
     width: 85%;
-    text-align: center;
-    #noti-btn {
-        margin-top: 20px;
+    .div-btn {
+        display: flex;
+        justify-content: center;
+        #noti-btn {
+            margin-top: 20px;
+        }
     }
     .grid-events {
         margin-bottom: 50px;
