@@ -1,18 +1,24 @@
 /* FAQ */
 
 #main-faq {
-    img {
-        width: 100%;
-        margin-bottom: 30px;
+  img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #container-faq {
+    #sec5 {
+      width: 100%;
+      .modal.fade {
+        color: black;
+      }
     }
-    #container-faq {
-        #sec5 {
-            width: 100%;
-            .modal.fade {
-                color: black;
-            }
-        }
+  }
+  .modal.fade {
+    font-weight: bold;
+    textarea {
+      font-weight: bolder;
     }
+  }
 }
 
 // details y summary están a parte porque sino la animación no funciona
@@ -30,18 +36,18 @@ summary {
   display: block;
   position: relative;
   margin-bottom: 0;
-  padding: 8px;    
+  padding: 8px;
   &::before,
   &::after {
-    width: .75em;
+    width: 0.75em;
     height: 2px;
     position: absolute;
     top: 50%;
     right: 0;
-    content: '';
+    content: "";
     background-color: white;
     transform: translateY(-50%);
-    transition: transform .2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
   }
   &::after {
     transform: translateY(-50%) rotate(90deg);

@@ -1,237 +1,233 @@
 /* Responsive */
 
-@media (max-width:992px) {
+@media (max-width: 992px) {
+  /* Contacto */
 
-    /* Contacto */
+  #main-contacto {
+    width: 70%;
+  }
 
-    #main-contacto {
-        width: 70%;
+  /* Eventos */
+
+  #main-eventos {
+    .grid-events {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      grid-template-areas: "event1 event2" "event3 event4" "event5 event6" "event7 event8" "event9 .";
     }
-
-    /* Eventos */
-
-    #main-eventos {
-        .grid-events {
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(5, 1fr);
-            grid-template-areas: "event1 event2" "event3 event4" "event5 event6" "event7 event8" "event9 .";
+    .info {
+      width: 100%;
+      .info-card {
+        img {
+          width: 50%;
         }
-        .info {
-            width: 100%;
-            .info-card {
-                img {
-                    width: 50%;
-                }
-            }
-        }
+      }
     }
+  }
 
-    /* Nosotros */
+  /* Nosotros */
 
-    #contain-us {
-        grid-template-columns: 1fr;
-        grid-template-areas: "sec2" "sec1" "sec3" "sec4";
-        gap: 10px;
-        #sec3 {
-            margin: 0 auto;
-            img {
-                width: 50%;
-                display: flex;
-                margin: 0 auto;
-            }
-        }
+  #contain-us {
+    grid-template-columns: 1fr;
+    grid-template-areas: "sec2" "sec1" "sec3" "sec4";
+    gap: 10px;
+    #sec3 {
+      margin: 0 auto;
+      img {
+        width: 50%;
+        display: flex;
+        margin: 0 auto;
+      }
     }
+  }
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
+  /* Contacto */
 
-    /* Contacto */
-
-    #main-contacto {
-        width: 75%;
-        .names {
-            grid-template-columns: 1fr;
-        }
+  #main-contacto {
+    width: 75%;
+    .names {
+      grid-template-columns: 1fr;
     }
+  }
 
-    /* Eventos */
-    
-    #main-eventos {
-        .grid-events {
-            font-size: 16px;
-            .card {
-                .card-desc {
-                    display: none;
-                }
-            }
+  /* Eventos */
+
+  #main-eventos {
+    .grid-events {
+      font-size: 16px;
+      .card {
+        .card-desc {
+          display: none;
         }
-        
+      }
     }
+  }
 
-    /* Main*/
+  /* Main*/
 
-    main {
-        padding: 15px;
-        .carousel.slide {
-            width: 100%;
-        }
+  main {
+    padding: 15px;
+    .carousel.slide {
+      width: 100%;
     }
+  }
 
+  /* Footer */
 
-    /* Footer */
-
-    footer {
-        text-align: center;
-        flex-direction: column;
-        align-items: center;
-        .redes, .part1, .part2 {
-            width: 100%;
-            .icons {
-                width: 50%;
-            }
-        }
+  footer {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    .redes,
+    .part1,
+    .part2 {
+      width: 100%;
+      .icons {
+        width: 50%;
+      }
     }
+  }
 }
 
-@media (max-width:600px) {
-    
-    /* Header */
+@media (max-width: 600px) {
+  /* Header */
 
-    nav {
-        padding-bottom: 10px;
+  nav {
+    padding-bottom: 10px;
+  }
+
+  /* Main */
+
+  main {
+    width: 85%;
+    font-size: 2.8vw;
+    h2 {
+      font-size: 6vw;
     }
+  }
 
-    /* Main */
+  /* Mis Aportes */
 
-    main {
-        width: 85%;
-        font-size: 2.8vw;
-        h2 {
-            font-size: 6vw;
-        }  
-    }
-
-    /* Mis Aportes */
-
-    #main-aportes {
+  #main-aportes {
     display: flex;
     padding: 50px 5px;
     width: 90%;
+  }
+
+  /* FAQ */
+
+  #main-faq {
+    padding: 20px;
+  }
+
+  /* Eventos */
+
+  #main-eventos {
+    .grid-events {
+      font-size: 16px;
     }
+  }
 
-    /* FAQ */
-
-    #main-faq {
-        padding: 20px;
-    }
-
-    /* Eventos */
-
-    #main-eventos {
-        .grid-events {
-            font-size: 16px;
+  #main-eventos {
+    .info {
+      width: 100%;
+      .info-card {
+        flex-direction: column;
+        img {
+          width: 100%;
         }
+      }
+      #info1,
+      #info3,
+      #info5,
+      #info7,
+      #info9 {
+        flex-direction: column-reverse;
+      }
     }
-
-    #main-eventos {
-        .info {
-            width: 100%;
-            .info-card {
-                flex-direction: column;
-                img {
-                    width: 100%;
-                }
-            }
-            #info1, #info3, #info5, #info7, #info9 {
-                flex-direction: column-reverse;
-            }
-        }
-    }
-    
+  }
 }
 
 @media (max-width: 576px) {
-
-    #main-eventos {
-        .grid-events {
-            .card {
-                .card-date {
-                    display: none;
-                }
-            }
+  #main-eventos {
+    .grid-events {
+      .card {
+        .card-date {
+          display: none;
         }
+      }
     }
+  }
 
-    main {
-        font-size: 3.5vw;
-        .carousel.slide {
-            width: 100%;
-            height: 400px;
-            img {
-                height: 400px;
-                object-fit: cover;
-            }
-        }
-        .art {
-            grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-            grid-template-rows: repeat(auto-fit, minmax(310px, 1fr));
-        }
+  main {
+    font-size: 3.5vw;
+    .carousel.slide {
+      width: 100%;
+      height: 400px;
+      img {
+        height: 400px;
+        object-fit: cover;
+      }
     }
+    .art {
+      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+      grid-template-rows: repeat(auto-fit, minmax(310px, 1fr));
+    }
+  }
 }
 
 @media (max-width: 425px) {
+  /* Eventos */
 
-    /* Eventos */
-
-    main {
-        font-size: 4vw;
-        .art {
-
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(1, 1fr);
-            .cuadros {
-                .cuadros-img {
-                    width: 100%;
-                }
-            }
-        }  
-    }
-
-    #main-eventos {
-        .grid-events {
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(9, 1fr);
-            grid-template-areas: "event1" "event2" "event3" "event4" "event5" "event6" "event7" "event8" "event9";
-            .card {
-                .card-date {
-                    display: block;
-                }
-            }
+  main {
+    font-size: 4vw;
+    .art {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      .cuadros {
+        .cuadros-img {
+          width: 100%;
         }
+      }
     }
+  }
+
+  #main-eventos {
+    .grid-events {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(9, 1fr);
+      grid-template-areas: "event1" "event2" "event3" "event4" "event5" "event6" "event7" "event8" "event9";
+      .card {
+        .card-date {
+          display: block;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 375px) {
-    main {
-        font-size: 5vw;
-    }
+  main {
+    font-size: 5vw;
+  }
 }
 
 @media (max-width: 320px) {
+  /* Main */
 
-    /* Main */
-
-    main {
-        width: 95%;
-        h2 {
-            font-size: 7vw;
-        }
+  main {
+    width: 95%;
+    h2 {
+      font-size: 7vw;
     }
+  }
 
-    /* Contacto */
+  /* Contacto */
 
-    #main-contacto {
-        width: 85%;
-        display: flex;
-    }   
+  #main-contacto {
+    width: 85%;
+    display: flex;
+  }
 }

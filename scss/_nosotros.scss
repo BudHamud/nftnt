@@ -1,57 +1,57 @@
 /* Nosotros */
 
 #contain-us {
-    text-decoration: none;
-    display: grid;
-    grid-template-columns: 2fr 6fr;
-    grid-template-areas: "sec2 sec1" "sec3 sec4";
-    gap: 20px;
-    span {
-        font-weight: 900;
-        color: $markColor;
+  text-decoration: none;
+  display: grid;
+  grid-template-columns: 2fr 6fr;
+  grid-template-areas: "sec2 sec1" "sec3 sec4";
+  gap: 20px;
+  span {
+    font-weight: 900;
+    color: $markColor;
+  }
+  #sec1 {
+    grid-area: sec1;
+    p {
+      text-align: justify;
+      margin-bottom: 10px;
     }
-    #sec1 {
-        grid-area: sec1;
-        p {
-            text-align: justify;
-            margin-bottom: 10px;
-        }
+  }
+  #sec2 {
+    grid-area: sec2;
+  }
+  #sec3 {
+    grid-area: sec3;
+    justify-self: center;
+    align-self: center;
+    img {
+      width: 100%;
     }
-    #sec2 {
-        grid-area: sec2;
+    p {
+      text-align: justify;
+      margin-bottom: 10px;
     }
-    #sec3 {
-        grid-area: sec3;
-        justify-self: center;
-        align-self: center;
-        img {
-            width: 100%;
-        }
-        p {
-            text-align: justify;
-            margin-bottom: 10px;
-        }
-        h3 {
-            display: flex;
-            justify-content: center;
-            margin: 10px;
-        }
+    h3 {
+      display: flex;
+      justify-content: center;
+      margin: 10px;
     }
-    #sec4 {
-        grid-area: sec4;
-        align-self: center;
-        img {
-            width: 100%;
-            margin-top: 10px;
-            border-radius: 20px;
-        }
-        p {
-            text-align:justify;
-        }
-        h3 {
-            display: flex;
-            justify-content: center;
-            margin: 10px;
-        }
+  }
+  #sec4 {
+    grid-area: sec4;
+    align-self: center;
+    img {
+      width: 100%;
+      margin-top: 10px;
+      border-radius: 20px;
     }
+    p {
+      text-align: justify;
+    }
+    h3 {
+      display: flex;
+      justify-content: center;
+      margin: 10px;
+    }
+  }
 }
