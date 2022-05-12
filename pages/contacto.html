@@ -60,7 +60,7 @@
                   class="nav-link active"
                   aria-current="page"
                   href="contacto.html"
-                  >Contáctanos</a
+                  ><span class="mark-color">Contáctanos</span></a
                 >
               </li>
               <li class="nav-item">
@@ -87,7 +87,7 @@
 
         <div class="names">
           <div id="fir-name">
-            <label for="name" class="form-label">Nombre/s:</label>
+            <label for="name" class="form-label">Nombre/s:<span>*</span></label>
             <input
               type="text"
               class="form-control"
@@ -99,7 +99,7 @@
           </div>
 
           <div id="sec-name">
-            <label for="sec-name" class="form-label">Apellido/s:</label>
+            <label for="sec-name" class="form-label">Apellido/s:<span>*</span></label>
             <input
               type="text"
               class="form-control"
@@ -111,7 +111,7 @@
           </div>
         </div>
 
-        <label for="date" class="form-label">Fecha de Nacimiento:</label>
+        <label for="date" class="form-label">Fecha de Nacimiento:<span>*</span></label>
         <input
           class="form-control"
           type="date"
@@ -120,7 +120,7 @@
           required
         />
 
-        <label for="age" class="form-label">Edad:</label>
+        <label for="age" class="form-label">Edad:<span>*</span></label>
         <input
           class="form-control"
           type="number"
@@ -130,7 +130,7 @@
           required
         />
 
-        <label for="genre" class="classic form-label">Género:</label>
+        <label for="genre" class="classic form-label">Género:<span>*</span></label>
         <select class="form-select" name="genre" id="genre" required>
           <option id="poke" disabled selected>
             Por favor, indique su género
@@ -140,7 +140,7 @@
           <option value="oth">Otro</option>
         </select>
 
-        <label for="email" class="form-label">Email:</label>
+        <label for="email" class="form-label">Email:<span>*</span></label>
         <input
           class="col-12 form-control"
           type="email"

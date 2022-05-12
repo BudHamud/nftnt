@@ -17,7 +17,6 @@
     color: white;
     border: solid 1px white;
     color-scheme: dark;
-
     &::placeholder {
       color: white;
       opacity: 0.7;
@@ -30,5 +29,8 @@
     input {
       width: 100%;
     }
+  }
+  span {
+    color: $markColor
   }
 }

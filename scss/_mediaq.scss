@@ -63,9 +63,17 @@
         }
       }
     }
+    .info {
+      .info-card {
+        img {
+          height: 200px;
+          margin: auto 0; 
+        }
+      }
+    }
   }
 
-  /* Main*/
+  /* Main e index */
 
   main {
     padding: 15px;
@@ -108,14 +116,6 @@
     }
   }
 
-  /* Mis Aportes */
-
-  #main-aportes {
-    display: flex;
-    padding: 50px 5px;
-    width: 90%;
-  }
-
   /* FAQ */
 
   #main-faq {
@@ -128,15 +128,13 @@
     .grid-events {
       font-size: 16px;
     }
-  }
-
-  #main-eventos {
     .info {
       width: 100%;
       .info-card {
         flex-direction: column;
         img {
           width: 100%;
+          height: 100%;
         }
       }
       #info1,
@@ -151,6 +149,8 @@
 }
 
 @media (max-width: 576px) {
+  /* Eventos */
+
   #main-eventos {
     .grid-events {
       .card {
@@ -161,8 +161,10 @@
     }
   }
 
+  /* Main e index */
+
   main {
-    font-size: 3.5vw;
+    font-size: 3.3vw;
     .carousel.slide {
       width: 100%;
       height: 400px;
@@ -179,7 +181,7 @@
 }
 
 @media (max-width: 425px) {
-  /* Eventos */
+  /* Main e index/obras */
 
   main {
     font-size: 4vw;
@@ -193,6 +195,8 @@
       }
     }
   }
+
+  /* Eventos */
 
   #main-eventos {
     .grid-events {
@@ -209,6 +213,8 @@
 }
 
 @media (max-width: 375px) {
+  /* Main */
+
   main {
     font-size: 5vw;
   }
