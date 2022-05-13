@@ -22,6 +22,8 @@ body {
   font-weight: 600;
 }
 
+/* Cargador */
+
 .cargador {
   width: 70px;
   height: 70px;
@@ -103,8 +105,8 @@ main {
     margin-bottom: 30px;
   }
   .art {
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(350px, 1fr));
     display: grid;
     gap: 30px;
     .cuadros {
@@ -119,7 +121,7 @@ main {
         margin-bottom: 10px;
       }
       .cuadros-img {
-        width: 300px;
+        width: 250px;
         border-radius: 10px;
       }
       .location {
@@ -209,6 +211,7 @@ footer {
       text-align: left;
       li {
         a {
+          text-decoration: none;
           color: white;
           opacity: 0.8;
           &:hover {
