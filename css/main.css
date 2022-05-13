@@ -18,31 +18,19 @@ body {
   background-color: white;
   font-weight: 600; }
 
-a {
-  text-decoration: none; }
-
-header {
-  z-index: 2; }
-
-main {
-  z-index: 2; }
-
-footer {
-  z-index: 2; }
-
-.preloader {
+.cargador {
   width: 70px;
   height: 70px;
   border: 10px solid #eee;
   border-top: 10px solid #666;
   border-radius: 50%;
-  animation-name: girar;
+  animation-name: ruedita;
   animation-duration: 1.5s;
   animation-timing-function: linear;
   z-index: 0;
   opacity: 0; }
 
-@keyframes girar {
+@keyframes ruedita {
   0% {
     z-index: 100;
     transform: rotate(0deg);
