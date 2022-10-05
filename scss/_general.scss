@@ -18,7 +18,6 @@ html {
 body {
   font-family: "Prompt";
   background-image: url(../images/pex4.jpg);
-  background-color: white;
   font-weight: 600;
 }
 
@@ -36,11 +35,7 @@ body {
   z-index: 0;
   opacity: 0;
 }
-@keyframes ruedita {
-  0% {z-index: 100; transform: rotate(0deg); opacity: 1;}
-  99% {z-index: 100; transform: rotate(360deg); opacity: 1;}
-  100% {z-index: 0; width: 0; height: 0; opacity: 0}
-}
+@include ruedita-anim;
 .okupa {
   position: fixed;
   background-color: black;
@@ -52,18 +47,14 @@ body {
   z-index: 0;
   opacity: 0;
 }
-@keyframes okupa {
-  0% {width: 100%; height: 100%; z-index: 100; opacity: 1;}
-  99% {width: 100%; height: 100%; z-index: 100; opacity: 1;}
-  100% {width: 0; height: 0; z-index: 0; opacity: 0;}
-}
+@include okupa-anim;
 
 /* Header */
 
 header {
   margin-bottom: 50px;
   .mark-color {
-    color: $markColor;
+    color: $mark-color;
   }
   nav {
     img {
@@ -114,7 +105,7 @@ main {
       text-align: center;
       font-size: 20px;
       padding: 20px;
-      background-color: $secColor;
+      background-color: $sec-color;
       border-radius: 20px;
       h5 {
         font-weight: 600;
@@ -129,7 +120,7 @@ main {
         color: white;
         &:hover {
           font-size: 25px;
-          color: $markColor;
+          color: $mark-color;
         }
       }
       p {
@@ -170,7 +161,7 @@ footer {
         animation-name: insta;
         animation-duration: 2s;
         animation-iteration-count: infinite;
-        @include instaAnim;
+        @include insta-anim;
       }
       #twitter:hover {
         color: map-get($map: $redes, $key: twitter);
@@ -215,7 +206,7 @@ footer {
           color: white;
           opacity: 0.8;
           &:hover {
-            color: $markColor;
+            color: $mark-color;
             opacity: 1;
           }
         }
@@ -230,7 +221,7 @@ footer {
   i {
     padding: 20px;
     border-radius: 50px;
-    background-color: $mainColor;
+    background-color: $main-color;
     color: white;
     font-size: 22px;
     position: fixed;

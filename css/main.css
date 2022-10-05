@@ -15,7 +15,6 @@ html {
 body {
   font-family: "Prompt";
   background-image: url(../images/pex4.jpg);
-  background-color: white;
   font-weight: 600; }
 
 /* Cargador */
@@ -78,7 +77,9 @@ body {
 header {
   margin-bottom: 50px; }
   header .mark-color {
-    color: #f68989; }
+    color: red; }
+  header nav ul li a {
+    color: red; }
   header nav img {
     width: 60px;
     margin-right: 20px; }

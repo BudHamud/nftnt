@@ -1,18 +1,15 @@
 // Variables
 
-$mainColor: gray;
-$secColor: #2c394b;
-$terColor: #383838;
-$spanColor: #750550;
-$markColor: #f68989;
+$main-color: gray;
+$sec-color: #2c394b;
+$ter-color: #383838;
+$mark-color: #f68989;
 
 $w-100: 100%;
 
-$festividad: "Butrap";
-
 // Mixin
 
-@mixin instaAnim {
+@mixin insta-anim {
   @keyframes insta {
     0% {
       color: #f09433;
@@ -29,11 +26,19 @@ $festividad: "Butrap";
   }
 }
 
-@mixin cargador {
+@mixin ruedita-anim {
+  @keyframes ruedita {
+    0% {z-index: 100; transform: rotate(0deg); opacity: 1;}
+    99% {z-index: 100; transform: rotate(360deg); opacity: 1;}
+    100% {z-index: 0; width: 0; height: 0; opacity: 0}
+  }
+}
+
+@mixin okupa-anim {
   @keyframes okupa {
-    0% {width: 100%; height: 100%; z-index: 100;}
-    99% {width: 100%; height: 100%; z-index: 100;}
-    100% {width: 0; height: 0; z-index: 0;}
+    0% {width: 100%; height: 100%; z-index: 100; opacity: 1;}
+    99% {width: 100%; height: 100%; z-index: 100; opacity: 1;}
+    100% {width: 0; height: 0; z-index: 0; opacity: 0;}
   }
 }
 

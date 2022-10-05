@@ -13,7 +13,7 @@
   select {
     width: 100%;
     margin-bottom: 30px;
-    background-color: $secColor;
+    background-color: $sec-color;
     color: white;
     border: solid 1px white;
     color-scheme: dark;
@@ -31,6 +31,6 @@
     }
   }
   span {
-    color: $markColor
+    color: $mark-color
   }
 }
